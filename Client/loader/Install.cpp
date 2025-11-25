@@ -952,7 +952,7 @@ SString CheckOnRestartCommand()
 
             deleteSourceRoot.Release();
 
-            // If a new "Monky.exe" exists, let that complete the install
+            // If a new "Project Monky.exe" exists, let that complete the install
             if (FileExists(MTA_EXE_NAME_RELEASE))
                 return "install from far " + strOperation + " " + strParameters;
 
