@@ -917,7 +917,7 @@ void CSettings::CreateGUI()
     /**
      *  Audio tab
      **/
-    fIndentX = pManager->CGUI_GetMaxTextExtent("default-normal", _("Master volume:"), _("Radio volume:"), _("SFX volume:"), _("MTA volume:"),
+    fIndentX = pManager->CGUI_GetMaxTextExtent("default-normal", _("Master volume:"), _("Radio volume:"), _("SFX volume:"), _("Monky volume:"),
                                                _("Voice volume:"), _("Play mode:"));
 
     m_pAudioGeneralLabel = reinterpret_cast<CGUILabel*>(pManager->CreateLabel(pTabAudio, _("General")));
@@ -992,7 +992,7 @@ void CSettings::CreateGUI()
     FinalizeSliderRow(tabPanelSize.fX, m_pAudioSFXVolume, m_pLabelSFXVolumeValue, 160.0f, kSliderLabelSpacing, m_pLabelSFXVolume);
 
     vecTemp.fX = 11;
-    m_pLabelMTAVolume = reinterpret_cast<CGUILabel*>(pManager->CreateLabel(pTabAudio, _("MTA volume:")));
+    m_pLabelMTAVolume = reinterpret_cast<CGUILabel*>(pManager->CreateLabel(pTabAudio, _("Monky volume:")));
     m_pLabelMTAVolume->SetPosition(CVector2D(vecTemp.fX, vecTemp.fY + 29.0f));
     m_pLabelMTAVolume->GetPosition(vecTemp, false);
     m_pLabelMTAVolume->AutoSize();
@@ -1099,7 +1099,7 @@ void CSettings::CreateGUI()
     m_pCheckBoxMuteSFX->GetPosition(vecTemp, false);
     m_pCheckBoxMuteSFX->AutoSize(NULL, 20.0f);
 
-    m_pCheckBoxMuteMTA = reinterpret_cast<CGUICheckBox*>(pManager->CreateCheckBox(pTabAudio, _("Mute MTA sounds when minimized"), true));
+    m_pCheckBoxMuteMTA = reinterpret_cast<CGUICheckBox*>(pManager->CreateCheckBox(pTabAudio, _("Mute Monky sounds when minimized"), true));
     m_pCheckBoxMuteMTA->SetPosition(CVector2D(vecTemp.fX, vecTemp.fY + 20.0f));
     m_pCheckBoxMuteMTA->GetPosition(vecTemp, false);
     m_pCheckBoxMuteMTA->AutoSize(NULL, 20.0f);
