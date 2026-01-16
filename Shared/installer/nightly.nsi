@@ -393,7 +393,6 @@ Function .onInstSuccess
 			Call MTACreateShortсut
 		${EndIf}
 		${If} ${FileExists} $StartMenuClientShortcutPath
-			ApplicationID::Set "$StartMenuClientShortcutPath" "${APPLICATION_ID}"
 			${If} ${Errors}
 				${LogText} "Error setting Application ID for client shortcut"
 			${EndIf}
