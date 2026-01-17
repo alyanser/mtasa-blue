@@ -1629,7 +1629,7 @@ void CVersionUpdater::_DialogSidegradeDownloadQuestion()
     GetQuestionBox().Reset();
     GetQuestionBox().SetTitle(SString(_("Project Monky Update Required")));
     GetQuestionBox().SetMessage(SString(_("An updated version of Project Monky is needed to join the server.\n\n"
-                                          "Download and install the latest one from"
+                                          "Download and install the latest one from "
                                             "https://monkygaming.com/projectmonky")));
     GetQuestionBox().SetButton(0, _("OK"));
     GetQuestionBox().Show();
