@@ -2315,7 +2315,7 @@ Function MTAInitFileNamesAndPaths
 	StrCpy $StartMenuUninstallShortcutPath "$StartMenuMTAFolderPath\$UninstallShortcutName.lnk"
 	# Shortcut names for desktop and start menu are different and can't be safely unified.
 	# Obvious fix is to roll 1 update where all shortcuts will be deleted and replaced with a unified names.
-	StrCpy $DesktopClientShortcutPath "$DESKTOP\$ClientShortcutName ${MASK.0.0}.lnk"
+	StrCpy $DesktopClientShortcutPath "$DESKTOP\$ClientShortcutName.lnk"
 	# Exe names
 	StrCpy $ClientExeName "Project Monky.exe"
 	StrCpy $UninstallExeName "Uninstall.exe"
