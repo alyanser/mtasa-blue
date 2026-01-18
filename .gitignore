@@ -407,6 +407,5 @@ utils/DXFiles.zip
 utils/DXFiles/
 !*.so
 !*.dll
-!*.exe
 utils/vswhere.exe
 *.generated.h
