@@ -17,14 +17,14 @@ class CServerInfo;
 #define SERVER_UPDATE_INTERVAL 2500
 
 // Dimensions for our window
-#define INFO_WINDOW_DEFAULTWIDTH  370.0f
-#define INFO_WINDOW_DEFAULTHEIGHT 400.0f
+#define INFO_WINDOW_DEFAULTWIDTH 370.0f
+#define INFO_WINDOW_DEFAULTHEIGHT 140.0f
 
 #define INFO_WINDOW_HSPACING 20
-#define INFO_LABEL_VSPACING  0
+#define INFO_LABEL_VSPACING 0
 #define INFO_WINDOW_VSPACING 10
-#define INFO_BUTTON_HEIGHT   25
-#define INFO_BUTTON_WIDTH    110
+#define INFO_BUTTON_HEIGHT 25
+#define INFO_BUTTON_WIDTH 110
 
 #include "CServerList.h"
 #include "CSingleton.h"
@@ -60,30 +60,10 @@ public:
 
 protected:
     CGUIWindow* m_pWindow;
-    CGUILabel*  m_pServerNameLabel;
-    CGUILabel*  m_pServerAddressLabel;
-    CGUILabel*  m_pGamemodeLabel;
-    CGUILabel*  m_pMapLabel;
-    CGUILabel*  m_pPlayersLabel;
-    CGUILabel*  m_pPasswordedLabel;
-    CGUILabel*  m_pLatencyLabel;
-
-    CGUILabel* m_pServerNameLabelTitle;
-    CGUILabel* m_pServerAddressLabelTitle;
-    CGUILabel* m_pGamemodeLabelTitle;
-    CGUILabel* m_pMapLabelTitle;
-    CGUILabel* m_pPlayersLabelTitle;
-    CGUILabel* m_pPasswordedLabelTitle;
-    CGUILabel* m_pLatencyLabelTitle;
-
-    CGUIGridList* m_pServerPlayerList;
     CGUIHandle    m_hPlayerName;
-
     CGUICheckBox* m_pCheckboxAutojoin;
-
     CGUILabel* m_pEnterPasswordLabel;
     CGUIEdit*  m_pEnterPasswordEdit;
-
     CGUIButton* m_pButtonJoinGame;
     CGUIButton* m_pButtonClose;
 

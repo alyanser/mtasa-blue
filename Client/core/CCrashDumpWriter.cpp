@@ -3083,9 +3083,7 @@ void CCrashDumpWriter::DumpMiniDump(_EXCEPTION_POINTERS* pException, CExceptionI
         const wchar_t* emergencyMessage =
             L"Project Monky has crashed.\n\n"
             L"The usual crash dialog has also failed, with this as fallback.\n\n"
-            L"Crash information has been saved to:\n"
-            L"MTA San Andreas\\mta\\core.log\n\n"
-            L"Contact support on the MTA discord: https://discord.gg/RygaCSD.\n\n"
+            L"Contact support on the Project Monky discord: https://discord.gg/95xRda4T\n\n"
             L"The game will now close.";
 
         MessageBoxW(nullptr, emergencyMessage, L"Project Monky - Fatal Error",
