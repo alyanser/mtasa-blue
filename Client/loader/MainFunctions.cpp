@@ -1126,10 +1126,10 @@ void HandleDuplicateLaunching()
             }
             else
             {
-                const SString strMessage = _("Trouble restarting MTA:SA\n\n"
+                const SString strMessage = _("Trouble restarting Project Monky\n\n"
                                             "If the problem persists, open Task Manager and\n"
                                             "stop the 'gta_sa.exe' and 'Project Monky.exe' processes\n\n\n"
-                                            "Try to launch MTA:SA again?");
+                                            "Try to launch Project Monky again?");
 
                 if (MessageBoxUTF8(0, strMessage, _("Error") + _E("CL04"), MB_ICONWARNING | MB_YESNO | MB_TOPMOST) == IDYES)
                 {
