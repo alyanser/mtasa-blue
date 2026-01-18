@@ -4,7 +4,8 @@ premake.modules.install_resources = {}
 
 -- Config variables
 local RESOURCES_URL = "https://mirror-cdn.multitheftauto.com/mtasa/resources/mtasa-resources-latest.zip"
-local EXTRACT_DIR = "Bin/server/mods/deathmatch/resources/"
+local WIN_EXTRACT_DIR = "Bin/server/mods/deathmatch/resources/"
+local LINUX_EXTRACT_DIR = "linux-bin/server/mods/deathmatch/resources/"
 
 newaction {
 	trigger = "install_resources",
@@ -16,12 +17,20 @@ newaction {
 			os.exit(1)
 			return
 		end
-		
-		-- Extract resources
-		if not os.extract_archive("temp_resources.zip", EXTRACT_DIR, true) then
-			errormsg("ERROR: Couldn't unzip resources")
-			os.exit(1)
-			return
+
+		if os.target() == "linux" then
+			if not os.extract_archive("temp_resources.zip", LINUX_EXTRACT_DIR, true) then
+				errormsg("ERROR: Couldn't unzip resources")
+				os.exit(1)
+				return
+			end
+		else
+
+			if not os.extract_archive("temp_resources.zip", WIN_EXTRACT_DIR, true) then
+				errormsg("ERROR: Couldn't unzip resources")
+				os.exit(1)
+				return
+			end
 		end
 
 		-- Cleanup

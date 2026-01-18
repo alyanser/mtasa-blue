@@ -15,7 +15,6 @@ else
 	CI_BUILD = false
 end
 GLIBC_COMPAT = os.getenv("GLIBC_COMPAT") == "true"
-MTA_MAETRO = os.getenv("MTA_MAETRO") == "true"
 
 newoption {
 	trigger     = "gccprefix",
@@ -40,7 +39,12 @@ workspace "MTASA"
 
 	targetprefix ""
 
-	location "Build"
+	if os.target() == "linux" then
+	    location "linux-build"
+	else
+	    location "Build"
+	end
+
 	startproject "Client Launcher"
 
 	cppdialect "C++17"
@@ -62,13 +66,15 @@ workspace "MTASA"
 		"_TIMESPEC_DEFINED"
 	}
 
-	if MTA_MAETRO then
-		defines { "MTA_MAETRO" }
+	buildpath = function(p)
+	    local base_dir = (os.target() == "linux") and "../linux-bin/" or "../Bin/"
+	    return "%{wks.location}/" .. base_dir .. p .. "/"
 	end
 
-	-- Helper function for output path
-	buildpath = function(p) return "%{wks.location}/../Bin/"..p.."/" end
-	copy = function(p) return "{COPY} %{cfg.buildtarget.abspath} \"%{wks.location}../Bin/"..p.."/\"" end
+	copy = function(p)
+	    local base_dir = (os.target() == "linux") and "../linux-bin/" or "../Bin/"
+	    return "{COPY} %{cfg.buildtarget.abspath} \"%{wks.location}" .. base_dir .. p .. "/\""
+	end
 
 	if GLIBC_COMPAT then
 		filter { "system:linux", "platforms:x86 or x64" }

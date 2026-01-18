@@ -92,10 +92,6 @@ echo "  AR = $AR"
 echo "  CC = $CC"
 echo "  CXX = $CXX"
 
-# Clean old build files
-rm -Rf Build/
-rm -Rf Bin/
-
 # Generate Makefiles
 if [[ -n "$GCC_PREFIX" ]]; then
     $PREMAKE5 --gccprefix="$GCC_PREFIX" --os="$BUILD_OS" --file=$PREMAKE_FILE gmake
@@ -104,4 +100,4 @@ else
 fi
 
 # Build!
-make -C Build/ -j ${NUM_CORES} AR=${AR} CC=${CC} CXX=${CXX} config=${CONFIG} all
+make -C linux-build/ -j ${NUM_CORES} AR=${AR} CC=${CC} CXX=${CXX} config=${CONFIG} all
