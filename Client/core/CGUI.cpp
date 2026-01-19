@@ -33,6 +33,10 @@ CLocalGUI::CLocalGUI()
     m_pChat = NULL;
     m_pDebugView = NULL;
 
+    m_bVersionTagPressed = false;
+    m_pLabelVersionTag = nullptr;
+    m_StoredMousePosition = {};
+
     m_bForceCursorVisible = false;
     m_bChatboxVisible = true;
     m_bChatboxInputBlocked = false;
@@ -161,13 +165,22 @@ void CLocalGUI::CreateWindows(bool bGameIsAlreadyLoaded)
     // Create the overlayed version labels
     CVector2D ScreenSize = pGUI->GetResolution();
     SString   strText = "Project Monky v1.0";
-    m_pLabelVersionTag = reinterpret_cast<CGUILabel*>(pGUI->CreateLabel(strText));
-    m_pLabelVersionTag->SetSize(CVector2D(m_pLabelVersionTag->GetTextExtent() + 5, 18));
-    m_pLabelVersionTag->SetPosition(CVector2D(ScreenSize.fX - m_pLabelVersionTag->GetTextExtent() - 5, ScreenSize.fY - 15));
+
+    m_pLabelVersionTag = pGUI->CreateLabel(strText);
+    const auto fTextWidth = m_pLabelVersionTag->GetTextExtent();
+
+    m_pLabelVersionTag->SetSize(CVector2D(fTextWidth + 5, 18));
+    m_pLabelVersionTag->SetPosition(CVector2D(ScreenSize.fX - fTextWidth - 5, ScreenSize.fY - 15));
     m_pLabelVersionTag->SetAlpha(0.5f);
-    m_pLabelVersionTag->SetTextColor(255, 255, 255);
+    m_pLabelVersionTag->SetTextColor(CGUIColor(200, 200, 200));
+    m_pLabelVersionTag->SetFont("default-normal-small");
     m_pLabelVersionTag->SetZOrderingEnabled(false);
     m_pLabelVersionTag->MoveToBack();
+
+    m_pLabelVersionTag->SetClickHandler(GUI_CALLBACK(&CLocalGUI::OnVersionTagClick, this));
+    m_pLabelVersionTag->SetMouseEnterHandler(GUI_CALLBACK(&CLocalGUI::OnVersionTagMouseEnter, this));
+    m_pLabelVersionTag->SetMouseLeaveHandler(GUI_CALLBACK(&CLocalGUI::OnVersionTagMouseLeave, this));
+
     if (MTASA_VERSION_TYPE < VERSION_TYPE_RELEASE)
         m_pLabelVersionTag->SetAlwaysOnTop(true);
 
@@ -909,4 +922,34 @@ void CLocalGUI::SetCursorPos(int iX, int iY, bool bForce, bool overrideStored)
         CSetCursorPosHook::GetSingleton().CallSetCursorPos(iX, iY);
     else
         ::SetCursorPos(iX, iY);
+}
+
+bool CLocalGUI::OnVersionTagClick(CGUIElement* pElement)
+{
+    SharedUtil::SetClipboardText("https://monkygaming.com/projectmonky");
+    g_pCore->ChatPrintf("#FF8C00* #FFFFFFWebsite link copied to clipboard: #00A0FFhttps://monkygaming.com/projectmonky", true);
+    return true;
+}
+
+bool CLocalGUI::OnVersionTagMouseEnter(CGUIElement* pElement)
+{
+    if (m_pLabelVersionTag && !m_bVersionTagPressed)
+    {
+        m_pLabelVersionTag->SetAlpha(1.0f);
+    }
+    return true;
+}
+
+bool CLocalGUI::OnVersionTagMouseLeave(CGUIElement* pElement)
+{
+    if (m_pLabelVersionTag)
+    {
+        if (m_bVersionTagPressed)
+        {
+            m_bVersionTagPressed = false;
+        }
+
+        m_pLabelVersionTag->SetAlpha(0.5f);
+    }
+    return true;
 }
