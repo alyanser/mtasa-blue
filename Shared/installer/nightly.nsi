@@ -1652,12 +1652,10 @@ Function GetVersionAtLocation
     StrCpy $0 "$R2.$R3.$R4.$R5" ; $0 now contains string like "1.2.0.192"
 FunctionEnd
 
-
-LangString INST_MTA_CONFLICT ${LANG_ENGLISH}    "A different major version of MTA ($1) already exists at that path.$\n$\n\
-            MTA is designed for major versions to be installed in different paths.$\n \
-            Are you sure you want to overwrite MTA $1 at \
+LangString INST_MTA_CONFLICT ${LANG_ENGLISH}    "A different major version of Project Monky ($1) already exists at that path.$\n$\n\
+            Are you sure you want to overwrite Project Monky $1 at \
             $INSTDIR ?"
-LangString INST_GTA_CONFLICT ${LANG_ENGLISH}    "MTA cannot be installed into the same directory as GTA:SA.$\n$\n\
+LangString INST_GTA_CONFLICT ${LANG_ENGLISH}    "Project Monky cannot be installed into the same directory as GTA:SA.$\n$\n\
             Do you want to use the default install directory$\n\
             $DEFAULT_INSTDIR ?"
 LangString INST_GTA_ERROR1 ${LANG_ENGLISH} "The selected directory does not exist.$\n$\n\
@@ -1689,20 +1687,6 @@ Function "CustomDirectoryPageLeave"
             cont2:
             StrCpy $INSTDIR $DEFAULT_INSTDIR
         ${Endif}
-    ${Endif}
-
-    # Check if user is trying to install over a different major version of MTA
-    Push $INSTDIR
-    Call GetInstallType
-    Pop $0
-    Pop $1
-    ${If} $0 == "overwrite"
-        MessageBox MB_OKCANCEL|MB_ICONQUESTION|MB_TOPMOST|MB_SETFOREGROUND \
-            "$(INST_MTA_CONFLICT)" \
-            IDOK cont
-            ${LogText} "-Function end - CustomDirectoryPageLeave (MTA_CONFLICT)"
-            Abort
-        cont:
     ${Endif}
     ${LogText} "-Function end - CustomDirectoryPageLeave"
 FunctionEnd
