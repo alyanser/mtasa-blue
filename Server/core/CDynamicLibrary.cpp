@@ -147,7 +147,7 @@ FuncPtr_t CDynamicLibrary::GetProcedureAddress(const char* szProcName)
 
 bool CDynamicLibrary::CheckMtaVersion(const char* szLibName)
 {
-#if MTASA_VERSION_TYPE >= VERSION_TYPE_UNSTABLE && defined(WIN_32)
+#if MTASA_VERSION_TYPE >= VERSION_TYPE_UNSTABLE
 
     // define MTASA_SKIP_VERSION_CHECKS in "Shared/build_overrides.h" to skip version checks
 #ifndef MTASA_SKIP_VERSION_CHECKS
@@ -165,7 +165,12 @@ bool CDynamicLibrary::CheckMtaVersion(const char* szLibName)
     if (pfnGetMtaVersion)
         pfnGetMtaVersion(buffer, sizeof(buffer));
     SString strVersionLibrary = buffer;
+#if defined(_WIN32)
     if (strVersionCore != strVersionLibrary)
+#else
+    // we just care about the build version for the linux server because there's no unstable releases for it
+    if (strVersionCore.substr(8) != strVersionLibrary.substr(8))
+#endif
     {
         Print("ERROR: '%s' library version is '%s' (Expected '%s')\n", szLibName, *strVersionLibrary, *strVersionCore);
         if (MTASA_VERSION_BUILD == 0)
