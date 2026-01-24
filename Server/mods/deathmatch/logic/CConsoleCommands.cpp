@@ -1552,6 +1552,12 @@ bool CConsoleCommands::ReloadModule(CConsole* pConsole, const char* szArguments,
 
 bool CConsoleCommands::Ver(CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient)
 {
+    pEchoClient->SendConsole("Project Monky v1.0");
+    return true;
+}
+
+bool CConsoleCommands::MTAVer(CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient)
+{
     pEchoClient->SendConsole(MTA_DM_FULL_STRING);
     return true;
 }

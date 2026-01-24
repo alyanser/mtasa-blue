@@ -1454,6 +1454,7 @@ void CCore::RegisterCommands()
     m_pCommands->Add("exit", _("exits the application"), CCommandFuncs::Exit);
     m_pCommands->Add("quit", _("exits the application"), CCommandFuncs::Exit);
     m_pCommands->Add("ver", _("shows the version"), CCommandFuncs::Ver);
+    m_pCommands->Add("mtaver", _("shows the mta version"), CCommandFuncs::MTAVer);
     m_pCommands->Add("time", _("shows the time"), CCommandFuncs::Time);
     m_pCommands->Add("showhud", _("shows the hud"), CCommandFuncs::HUD);
     m_pCommands->Add("binds", _("shows all the binds"), CCommandFuncs::Binds);
