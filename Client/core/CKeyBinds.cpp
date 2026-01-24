@@ -2260,8 +2260,9 @@ void CKeyBinds::LoadDefaultBinds()
     RemoveAllGTAControls("space");
     RemoveAllGTAControls("lshift");
 
-    AddGTAControl("lshift", "sprint");  // Add your preferred binding
+    AddGTAControl("lshift", "sprint");
     AddGTAControl("space", "jump");
+    AddGTAControl("space", "handbrake");
 }
 
 void CKeyBinds::LoadDefaultCommands(bool bForce)
