@@ -56,6 +56,7 @@ public:
     static bool ReloadModule(class CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient);
 
     static bool Ver(class CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient);
+    static bool MTAVer(class CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient);
     static bool Ase(class CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient);
     static bool OpenPortsTest(class CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient);
     static bool SetDbLogLevel(class CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient);

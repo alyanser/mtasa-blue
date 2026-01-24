@@ -42,6 +42,13 @@ void CCommandFuncs::Exit(const char* szParameters)
 void CCommandFuncs::Ver(const char* szParameters)
 {
     // Compose version string
+    const SString strVersion = "Project Monky v1.0\n";
+    CLocalGUI::GetSingleton().EchoConsole(strVersion);
+}
+
+void CCommandFuncs::MTAVer(const char* szParameters)
+{
+    // Compose version string
     unsigned short usNetRev = CCore::GetSingleton().GetNetwork()->GetNetRev();
     unsigned short usNetRel = CCore::GetSingleton().GetNetwork()->GetNetRel();
     SString        strVersion = BLUE_VERSION_STRING;
