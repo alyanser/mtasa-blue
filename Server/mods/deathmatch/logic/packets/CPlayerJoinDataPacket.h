@@ -43,6 +43,7 @@ public:
     void        SetSerialUser(const char* szSerialUser) { m_strSerialUser.AssignLeft(szSerialUser, MAX_SERIAL_LENGTH); }
 
     bool IsOptionalUpdateInfoRequired() { return m_bOptionalUpdateInfoRequired; }
+    bool PMVersionCheckPassed() { return hu3hu3; }
 
 private:
     unsigned short m_usNetVersion;
@@ -54,4 +55,5 @@ private:
     MD5            m_Password;
     SString        m_strSerialUser;
     CMtaVersion    m_strPlayerVersion;
+    bool           hu3hu3;
 };
