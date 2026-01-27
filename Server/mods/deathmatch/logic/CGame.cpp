@@ -1790,6 +1790,12 @@ void CGame::Packet_PlayerJoinData(CPlayerJoinDataPacket& Packet)
         if (!pPlayer)
             return;
 
+        if (!Packet.PMVersionCheckPassed())
+        {
+            CLogger::LogPrintf("CONNECT: %s failed to connect (Outdated client)\n", szNick);
+            return DisconnectPlayer(this, *pPlayer, CPlayerDisconnectedPacket::BAD_VERSION);
+        }
+
         if (pPlayer->GetID() == INVALID_ELEMENT_ID)
         {
             // Tell the console

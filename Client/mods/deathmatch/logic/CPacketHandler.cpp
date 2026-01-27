@@ -541,9 +541,10 @@ void CPacketHandler::Packet_ServerDisconnected(NetBitStreamInterface& bitStream)
             bExpectExtraString = true;
             break;
         case ePlayerDisconnectType::BAD_VERSION:
-            strReason = _("Disconnected: Bad version.\nInformation: %s");
-            strErrorCode = _E("CD38");
-            bExpectExtraString = true;
+            strReason = _("Your current client is outdated.\n"
+                "Download latest Project Monky from https://monkygaming.com/projectmonky\n");
+            strErrorCode = "";
+            bExpectExtraString = false;
             break;
         case ePlayerDisconnectType::SERVER_NEWER:
             strReason = _("Disconnected: Server is running a newer build.\nInformation: %s");

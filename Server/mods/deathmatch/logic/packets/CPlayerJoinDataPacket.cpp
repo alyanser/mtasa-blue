@@ -14,24 +14,21 @@
 
 bool CPlayerJoinDataPacket::Read(NetBitStreamInterface& BitStream)
 {
-    // hu3hu3hu3hu3
-    unsigned char b1, b2, b3, b4;
-
-    if (!(BitStream.Read(b1) && BitStream.Read(b2) && BitStream.Read(b3) && BitStream.Read(b4))) {
-        return false;
-    }
-
-    if (b1 != 0xDE || b2 != 0xAD || b3 != 0xBE || b4 != 0xEF)
-    {
-        return false;
-    }
-
     // Read out the stuff
     if (!BitStream.Read(m_usNetVersion) || !BitStream.Read(m_usMTAVersion))
         return false;
 
     if (!BitStream.Read(m_usBitStreamVersion))
         return false;
+
+    // hu3hu3hu3hu3
+    unsigned char b1, b2, b3, b4;
+
+    if (!(BitStream.Read(b1) && BitStream.Read(b2) && BitStream.Read(b3) && BitStream.Read(b4))) {
+        return hu3hu3 = false;
+    }
+
+    hu3hu3 = (b1 == 0x01 && b2 == 0xDE && b3 == 0xAD && b4 == 0x00);
 
     BitStream.ReadString(m_strPlayerVersion);
 

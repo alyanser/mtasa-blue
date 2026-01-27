@@ -247,9 +247,7 @@ CPacket* CPacketTranslator::Translate(const NetServerPlayerID& Socket, ePacketID
             delete pTemp;
             pTemp = NULL;
         }
-        else
-            // Attempt to read the content, if we fail, delete the packet again
-            if (!pTemp->Read(BitStream))
+        else if (!pTemp->Read(BitStream))
         {
             delete pTemp;
             pTemp = NULL;
