@@ -2724,13 +2724,8 @@ void CModelInfoSA::DeallocateModel()
     if (pInterfaceToDelete->VFTBL)
     {
         DWORD typeFunc = pInterfaceToDelete->VFTBL->GetModelType;
-<<<<<<< HEAD
-        if (IsValidGtaSaCodePtr(typeFunc))
-            modelType = ((eModelInfoType(*)())typeFunc)();
-=======
         if (SharedUtil::IsValidGtaSaPtr(typeFunc))
             modelType = ((eModelInfoType (*)())typeFunc)();
->>>>>>> 9d0932dda (Perf tweaks for 8fc6d49)
 
         if (modelType == eModelInfoType::ATOMIC || modelType == eModelInfoType::LOD_ATOMIC)
         {
