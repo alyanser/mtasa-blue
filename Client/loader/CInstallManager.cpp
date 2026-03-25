@@ -1651,8 +1651,8 @@ SString CInstallManager::_ProcessLangFileChecks()
         strMessage += "\n\n";
         strMessage += PathJoin(strTextFilePath, langFileNames[0]);
         strMessage += "\n\n";
-        strMessage += _("If MTA fails to load, please re-install GTA:SA");
-        MessageBoxUTF8(NULL, strMessage, "Multi Theft Auto: San Andreas", MB_OK | MB_ICONWARNING | MB_TOPMOST);
+        strMessage += _("If Project Monky fails to load, please re-install GTA:SA");
+        MessageBoxUTF8(NULL, strMessage, "Project Monky", MB_OK | MB_ICONWARNING | MB_TOPMOST);
         return "ok";
     }
 

@@ -477,7 +477,7 @@ static auto RunRollback(std::vector<InstallableFile>& files) -> size_t
     {
         MessageBoxUTF8(nullptr,
                        SString(_("Your installation may be corrupt now.\n\n%zu out of %zu files could not be restored from the backup.\n\nYou should "
-                                 "reinstall Multi Theft Auto from www.multitheftauto.com\nor try running the update with administrator rights."),
+                                 "reinstall Project Monky from https://monkygaming.com\nor try running the update with administrator rights."),
                                disasterCounter, files.size()),
                        "Project Monky", MB_OK | MB_ICONERROR | MB_TOPMOST);
 

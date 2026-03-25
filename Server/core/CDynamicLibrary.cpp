@@ -181,7 +181,7 @@ bool CDynamicLibrary::CheckMtaVersion(const char* szLibName)
             Print(" 2. Rebuild)\n\n\n");
         }
         else
-            Print("\n** REINSTALL MTA **\n\n");
+            Print("\n** REINSTALL Project Monky **\n\n");
         return false;
     }
 

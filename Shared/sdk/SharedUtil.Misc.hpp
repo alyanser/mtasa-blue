@@ -546,7 +546,7 @@ bool SharedUtil::IsGTAProcess()
         return true;
     }
 
-    if (strExecutable.EndsWithI("Multi Theft Auto.exe"))
+    if (strExecutable.EndsWithI("Project Monky.exe"))
     {
         iResult = 0;
         return false;

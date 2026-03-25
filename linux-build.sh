@@ -100,4 +100,4 @@ else
 fi
 
 # Build!
-make -C linux-build/ -j ${NUM_CORES} AR=${AR} CC=${CC} CXX=${CXX} config=${CONFIG} all
+make -C linux-build/ -j12  AR=${AR} CC=${CC} CXX=${CXX} config=${CONFIG} all

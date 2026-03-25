@@ -799,7 +799,7 @@ void ConfigureWerDumpPath()
     // Without admin privileges, we cannot update HKLM and stale entries from previous installs may persist.
     const wchar_t* exeNames[] = {
         L"gta_sa.exe",
-        loaderConfigured ? nullptr : L"Multi Theft Auto.exe"
+        loaderConfigured ? nullptr : L"Project Monky.exe"
     };
 
     for (const wchar_t* exeName : exeNames)
@@ -1178,7 +1178,7 @@ void ValidateGTAPath()
 
     if (result == GAME_PATH_MISSING)
     {
-        DisplayErrorMessageBox(_("Registry entries are missing. Please reinstall Multi Theft Auto: San Andreas."),
+        DisplayErrorMessageBox(_("Registry entries are missing. Please reinstall Project Monky."),
                               _E("CL12"), "reg-entries-missing");
         ExitProcess(EXIT_ERROR);
     }
@@ -1186,7 +1186,7 @@ void ValidateGTAPath()
     {
         DisplayErrorMessageBox(_("The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. "
                                 "Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains "
-                                "only standard ASCII characters and reinstall Multi Theft Auto: San Andreas."),
+                                "only standard ASCII characters and reinstall Project Monky."),
                               _E("CL13"));
         ExitProcess(EXIT_ERROR);
     }
