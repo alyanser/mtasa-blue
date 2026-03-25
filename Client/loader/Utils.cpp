@@ -1022,7 +1022,7 @@ void RelaunchAsAdmin(const SString& strCmdLine, const SString& strReason)
 {
     HideSplash();
     AddReportLog(7115, SString("Loader - Request to elevate privileges (%s)", *strReason));
-    MessageBoxUTF8(NULL, SString(_("MTA:SA needs Administrator access for the following task:\n\n  '%s'\n\nPlease confirm in the next window."), *strReason),
+    MessageBoxUTF8(NULL, SString(_("Project Monky needs Administrator access for the following task:\n\n  '%s'\n\nPlease confirm in the next window."), *strReason),
                    "Multi Theft Auto: San Andreas", MB_OK | MB_ICONINFORMATION | MB_TOPMOST);
     ReleaseSingleInstanceMutex();
     ShellExecuteNonBlocking("runas", PathJoin(GetMTASAPath(), MTA_EXE_NAME), strCmdLine);
@@ -1770,7 +1770,7 @@ void BsodDetectionPreLaunch()
         {
             // Ask user to confirm
             int iResponse =
-                MessageBoxUTF8(NULL, _("Did your computer restart when playing MTA:SA?"), "Project Monky", MB_YESNO | MB_ICONQUESTION | MB_TOPMOST);
+                MessageBoxUTF8(NULL, _("Did your computer restart when playing Project Monky?"), "Project Monky", MB_YESNO | MB_ICONQUESTION | MB_TOPMOST);
             if (iResponse == IDYES)
             {
                 SetApplicationSetting("diagnostics", "user-confirmed-bsod-time", strMinidumpTime);

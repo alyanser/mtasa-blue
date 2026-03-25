@@ -120,7 +120,6 @@ public:
     bool IsActive();
 
     void SetSelectedIndex(unsigned int uiIndex);
-    void ShowRichPresenceShareDataQuestionBox() const;
 
 protected:
     const static int SecKeyNum = 3;  // Number of secondary keys

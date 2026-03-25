@@ -390,7 +390,7 @@ int CLuaFunctionDefs::GetGameType(lua_State* luaVM)
         // Grab the gametype string.
         const char* szGameType = pASE->GetGameType();
 
-        // Return the gametype string if it's not "MTA:SA"
+        // Return the gametype string if it's not "Project Monky"
         if (strcmp(szGameType, GAME_TYPE_STRING))
         {
             lua_pushstring(luaVM, szGameType);

@@ -1078,7 +1078,7 @@ SString CInstallManager::_InstallFiles()
         else
             AddReportLog(5049, SString("_InstallFiles: Couldn't install files %s", ""));
 
-        m_strAdminReason = _("Install updated MTA:SA files");
+        m_strAdminReason = _("Install updated Project Monky files");
         return "fail";
     }
     else
@@ -1178,13 +1178,13 @@ SString CInstallManager::_PrepareLaunchLocation()
             {
                 if (fs::is_regular_file(sourcePath, ec))
                 {
-                    SString strMessage(_("MTA:SA cannot launch because copying a file failed:"));
+                    SString strMessage(_("Project Monky cannot launch because copying a file failed:"));
                     strMessage += "\n\n" + targetPath.u8string();
                     BrowseToSolution("copy-files", ASK_GO_ONLINE, strMessage);
                 }
                 else
                 {
-                    SString strMessage(_("MTA:SA cannot launch because an MTA:SA file is incorrect or missing:"));
+                    SString strMessage(_("Project Monky cannot launch because an Project Monky file is incorrect or missing:"));
                     strMessage += "\n\n" + sourcePath.u8string();
                     BrowseToSolution("mta-datafiles-missing", ASK_GO_ONLINE, strMessage);
                 }
@@ -1193,7 +1193,7 @@ SString CInstallManager::_PrepareLaunchLocation()
             }
             else
             {
-                m_strAdminReason = _("Copy MTA:SA files");
+                m_strAdminReason = _("Copy Project Monky files");
                 return "fail";
             }
         }
@@ -1216,7 +1216,7 @@ SString CInstallManager::_ProcessGtaPatchCheck()
 
     if (!FileGenerator::IsPatchBase(patchBasePath))
     {
-        SString strMessage(_("MTA:SA cannot launch because a GTA:SA file is incorrect or missing:"));
+        SString strMessage(_("Project Monky cannot launch because a GTA:SA file is incorrect or missing:"));
         strMessage += "\n\n" + patchBasePath.u8string();
         BrowseToSolution("gengta_pakfiles", ASK_GO_ONLINE, strMessage);
         return "quit";
@@ -1224,7 +1224,7 @@ SString CInstallManager::_ProcessGtaPatchCheck()
 
     if (!FileGenerator::IsPatchDiff(patchDiffPath))
     {
-        SString strMessage(_("MTA:SA cannot launch because an MTA:SA file is incorrect or missing:"));
+        SString strMessage(_("Project Monky cannot launch because an Project Monky file is incorrect or missing:"));
         strMessage += "\n\n" + patchDiffPath.u8string();
         BrowseToSolution("mta-datafiles-missing", ASK_GO_ONLINE, strMessage);
         return "quit";
@@ -1294,7 +1294,7 @@ SString CInstallManager::_ProcessGtaDllCheck()
 
         if (isAdmin)
         {
-            SString strMessage(_("MTA:SA cannot launch because a GTA:SA file is incorrect or missing:"));
+            SString strMessage(_("Project Monky cannot launch because a GTA:SA file is incorrect or missing:"));
             strMessage += "\n\n" + dependecyPath.u8string();
             BrowseToSolution(SString("gendep_error&name=%s", dependency.fileName), ASK_GO_ONLINE, strMessage);
             return "quit";
@@ -1349,11 +1349,11 @@ SString CInstallManager::_ProcessGtaVersionCheck()
 
             if (isAdmin)
             {
-                SString strMessage(_("MTA:SA cannot launch because the GTA:SA executable is incorrect or missing:"));
+                SString strMessage(_("Project Monky cannot launch because the GTA:SA executable is incorrect or missing:"));
                 strMessage += "\n\n" + gtaExePath.u8string();
                 strMessage +=
                     "\n\n" +
-                    _("Please check your anti-virus for a false-positive detection, try to add an exception for the GTA:SA executable and restart MTA:SA.");
+                    _("Please check your anti-virus for a false-positive detection, try to add an exception for the GTA:SA executable and restart Project Monky.");
                 BrowseToSolution(SString("gengta_error&code=%d", ec.value()), ASK_GO_ONLINE, strMessage);
                 return "quit";
             }
@@ -1374,7 +1374,7 @@ SString CInstallManager::_ProcessGtaVersionCheck()
 
             if (isAdmin)
             {
-                SString strMessage(_("MTA:SA cannot launch because the GTA:SA executable is not loadable:"));
+                SString strMessage(_("Project Monky cannot launch because the GTA:SA executable is not loadable:"));
                 strMessage += "\n\n" + gtaExePath.u8string();
                 BrowseToSolution(SString("gengta_error&code=%d", ec.value()), ASK_GO_ONLINE, strMessage);
                 return "quit";
@@ -1397,7 +1397,7 @@ SString CInstallManager::_ProcessGtaVersionCheck()
 
         if (isAdmin)
         {
-            SString strMessage(_("MTA:SA cannot launch because patching GTA:SA has failed:"));
+            SString strMessage(_("Project Monky cannot launch because patching GTA:SA has failed:"));
             strMessage += "\n\n" + gtaExePath.u8string();
             BrowseToSolution(SString("patchgta_error&code=%d", ec.value()), ASK_GO_ONLINE, strMessage);
             return "quit";
@@ -1463,7 +1463,7 @@ SString CInstallManager::_ProcessLayoutChecks()
 #if MTASA_VERSION_TYPE != VERSION_TYPE_CUSTOM
     // Check reg key exists
     {
-        if (GetRegistryValue("", "Last Install Location").empty())
+        if (GetRegistryValue("", "Last Run Location").empty())
             ShowLayoutError("[Registry key not present]");  // Can't find reg key
     }
 #endif
@@ -1578,7 +1578,7 @@ SString CInstallManager::_ProcessLayoutChecks()
     SString strDriveWithNoSpace = GetDriveNameWithNotEnoughSpace();
     if (!strDriveWithNoSpace.empty())
     {
-        SString strMessage(_("MTA:SA cannot continue because drive %s does not have enough space."), *strDriveWithNoSpace.Left(1));
+        SString strMessage(_("Project Monky cannot continue because drive %s does not have enough space."), *strDriveWithNoSpace.Left(1));
         BrowseToSolution(SString("low-disk-space&drive=%s", *strDriveWithNoSpace), ASK_GO_ONLINE | TERMINATE_PROCESS, strMessage);
     }
 

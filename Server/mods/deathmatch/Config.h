@@ -86,7 +86,7 @@
 #endif
 
 // Game Type
-#define GAME_TYPE_STRING "MTA:SA"
+#define GAME_TYPE_STRING "Project Monky"
 
 // Banlist filename
 #define FILENAME_BANLIST    "banlist.xml"

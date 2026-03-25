@@ -343,7 +343,7 @@ void CheckLibVersions() {
             }
             else if (strReqFileVersion != strFileVersion)
             {
-                DisplayErrorMessageBox(SStringX(_("File version mismatch error. Reinstall MTA:SA if you experience problems.\n") +
+                DisplayErrorMessageBox(SStringX(_("File version mismatch error. Reinstall Project Monky if you experience problems.\n") +
                                                SString("\n[%s %s/%s]\n", *strFilename, *strFileVersion, *strReqFileVersion)),
                                       _E("CL40"), "bad-file-version");
                 break;
@@ -351,7 +351,7 @@ void CheckLibVersions() {
         }
         else
         {
-            DisplayErrorMessageBox(SStringX(_("Some files are missing. Reinstall MTA:SA if you experience problems.\n") +
+            DisplayErrorMessageBox(SStringX(_("Some files are missing. Reinstall Project Monky if you experience problems.\n") +
                                            SString("\n[%s]\n", *strFilename)),
                                   _E("CL41"), "missing-file");
             break;
@@ -362,7 +362,7 @@ void CheckLibVersions() {
     // Check for Windows 'Safe Mode'
     if (GetSystemMetrics(SM_CLEANBOOT) != 0)
     {
-        DisplayErrorMessageBox(SStringX(_("MTA:SA is not compatible with Windows 'Safe Mode'.\n\nPlease restart your PC.\n")),
+        DisplayErrorMessageBox(SStringX(_("Project Monky is not compatible with Windows 'Safe Mode'.\n\nPlease restart your PC.\n")),
                               _E("CL42"), "safe-mode");
         ExitProcess(EXIT_ERROR);
     }
@@ -541,7 +541,7 @@ void HandleTrouble()
         return;
 
 #if !defined(MTA_DEBUG) && MTASA_VERSION_TYPE != VERSION_TYPE_CUSTOM
-    int iResponse = MessageBoxUTF8(NULL, _("Are you having problems running MTA:SA?.\n\nDo you want to revert to an earlier version?"),
+    int iResponse = MessageBoxUTF8(NULL, _("Are you having problems running Project Monky?.\n\nDo you want to revert to an earlier version?"),
                                    "Project Monky" + _E("CL07"), MB_YESNO | MB_ICONQUESTION | MB_TOPMOST);
     if (iResponse == IDYES)
     {
@@ -569,7 +569,7 @@ void HandleResetSettings()
     if (FileExists(strSettingsFilename))
     {
         int iResponse = MessageBoxUTF8(NULL,
-                                       _("There seems to be a problem launching MTA:SA.\nResetting GTA settings can sometimes fix this problem.\n\nDo you want "
+                                       _("There seems to be a problem launching Project Monky.\nResetting GTA settings can sometimes fix this problem.\n\nDo you want "
                                          "to reset GTA settings now?"),
                                        "Project Monky" + _E("CL08"), MB_YESNO | MB_ICONQUESTION | MB_TOPMOST);
         if (iResponse == IDYES)
@@ -597,7 +597,7 @@ void HandleResetSettings()
     else
     {
         // No settings to delete, or can't find them
-        int iResponse = MessageBoxUTF8(NULL, _("Are you having problems running MTA:SA?.\n\nDo you want to see some online help?"), "Project Monky",
+        int iResponse = MessageBoxUTF8(NULL, _("Are you having problems running Project Monky?.\n\nDo you want to see some online help?"), "Project Monky",
                                        MB_YESNO | MB_ICONQUESTION | MB_TOPMOST);
         if (iResponse == IDYES)
         {
@@ -634,7 +634,7 @@ void HandleNotUsedMainMenu()
             if (strWindowed == "0" && strFullscreenStyle == "0")
             {
                 // Inform user
-                SString strMessage = _("Are you having problems running MTA:SA?.\n\nDo you want to change the following setting?");
+                SString strMessage = _("Are you having problems running Project Monky?.\n\nDo you want to change the following setting?");
                 strMessage += "\n" + _("Fullscreen mode:") + " -> " + _("Borderless window");
                 HideSplash();
                 int iResponse = MessageBoxUTF8(NULL, strMessage, "Project Monky", MB_YESNO | MB_ICONQUESTION | MB_TOPMOST);
@@ -706,7 +706,7 @@ void HandleNotUsedMainMenu()
                 {
                     if (strProcessFilename.ContainsI(strMatchText))
                     {
-                        SString strMessage = _("Are you having problems running MTA:SA?.\n\nTry disabling the following products for GTA and MTA:");
+                        SString strMessage = _("Are you having problems running Project Monky?.\n\nTry disabling the following products for GTA and MTA:");
                         strMessage += "\n\n";
                         strMessage += procItems[i].szProductName;
                         DisplayErrorMessageBox(strMessage, _E("CL43"), procItems[i].szTrouble);
@@ -740,7 +740,7 @@ void HandleCustomStartMessage()
     {
         SString strFilename = strStartMessage.SplitRight("name=");
         strStartMessage = _("WARNING\n\n"
-                           "MTA:SA has detected unusual activity.\n"
+                           "Project Monky has detected unusual activity.\n"
                            "Please run a virus scan to ensure your system is secure.\n\n");
         strStartMessage += SString(_("The detected file was:  %s\n"), *strFilename);
     }
@@ -990,7 +990,7 @@ void HandleIfGTAIsAlreadyRunning()
     if (IsGTARunning())
     {
         if (MessageBoxUTF8(0,
-                          _("An instance of GTA: San Andreas is already running. It needs to be terminated before MTA:SA can be started. Do you want to do that now?"),
+                          _("An instance of GTA: San Andreas is already running. It needs to be terminated before Project Monky can be started. Do you want to do that now?"),
                           _("Information") + _E("CL10"), MB_YESNO | MB_ICONQUESTION | MB_TOPMOST) == IDYES)
         {
             TerminateOtherMTAIfRunning();
@@ -1210,9 +1210,9 @@ void ValidateGTAPath()
     // Check for semicolon in install path (causes problems)
     if (strGTAPath.Contains(";") || strMTASAPath.Contains(";"))
     {
-        DisplayErrorMessageBox(_("The path to your installation of 'MTA:SA' or 'GTA: San Andreas'\n"
+        DisplayErrorMessageBox(_("The path to your installation of 'Project Monky' or 'GTA: San Andreas'\n"
                                 "contains a ';' (semicolon).\n\n"
-                                "If you experience problems when running MTA:SA,\n"
+                                "If you experience problems when running Project Monky,\n"
                                 "move your installation(s) to a path that does not contain a semicolon."),
                               _E("CL15"), "path-semicolon");
     }

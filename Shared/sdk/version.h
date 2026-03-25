@@ -46,7 +46,7 @@
 #define MTASA_VERSION_MINOR         6
 #define MTASA_VERSION_MAINTENANCE   0
 #define MTASA_VERSION_TYPE          VERSION_TYPE_UNSTABLE
-#define MTASA_VERSION_BUILD         25810
+#define MTASA_VERSION_BUILD         23989
 
 #include "../build_overrides.h"
 
@@ -73,6 +73,10 @@
 
 #define QUOTE_DEFINE2(c) #c
 #define QUOTE_DEFINE(x) QUOTE_DEFINE2(x)
+
+#define PM_VERSION_MAJOR 1
+#define PM_VERSION_MINOR 0
+#define PM_VERSIONSTRING "1.1"
 
 // Implement compile types
 #if MTASA_VERSION_TYPE == VERSION_TYPE_CUSTOM

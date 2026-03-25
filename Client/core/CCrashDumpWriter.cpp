@@ -18,10 +18,15 @@
 #include <multiplayer/CMultiplayer.h>
 #include <core/CClientBase.h>
 #include "CrashHandler.h"
+#include "CClientVariables.h"
 #include <CrashTelemetry.h>
 
 #include <process.h>
 #include <DbgHelp.h>
+#include <windows.h>
+#include <winhttp.h>
+
+#pragma comment(lib, "winhttp.lib")
 
 #include <atomic>
 #include <array>
@@ -450,7 +455,7 @@ static HANDLE                                              ms_hCrashDialogProces
 [[nodiscard]] static std::array<SString, 2> BuildCrashDialogCandidates()
 {
     const SString          basePath = GetMTASABaseDir();
-    std::array<SString, 2> candidates = {SharedUtil::PathJoin(basePath, "Monky"), SharedUtil::PathJoin(basePath, "Project Monky_d.exe")};
+    std::array<SString, 2> candidates = {SharedUtil::PathJoin(basePath, "Project Monky.exe"), SharedUtil::PathJoin(basePath, "Project Monky_d.exe")};
 
     return candidates;
 }
@@ -1476,6 +1481,133 @@ static DWORD SafeRereadExceptionCode(_EXCEPTION_POINTERS* pException, DWORD fall
     return exceptionCode;
 }
 
+static void SendToDiscordWebhook(const SString escapedChunk)
+{
+    SString jsonBody = SString("{\"content\":\"```\\n%s\\n```\"}", escapedChunk.c_str());
+
+    HINTERNET hSession = WinHttpOpen(L"CrashReporter/1.0",
+                                      WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                                      WINHTTP_NO_PROXY_NAME,
+                                      WINHTTP_NO_PROXY_BYPASS, 0);
+    if (!hSession) return;
+
+    HINTERNET hConnect = WinHttpConnect(hSession, L"discord.com",
+                                         INTERNET_DEFAULT_HTTPS_PORT, 0);
+    if (!hConnect) { WinHttpCloseHandle(hSession); return; }
+
+    HINTERNET hRequest = WinHttpOpenRequest(
+        hConnect, L"POST",
+        L"/api/webhooks/1485935083889102888/hC2y7-vR1u3Jt8x6ijfDCGHhj3XNmYN8oBRU0TbnXqvaT3TyieIcJ6CYbavLTE9W7qnh",
+        nullptr, WINHTTP_NO_REFERER,
+        WINHTTP_DEFAULT_ACCEPT_TYPES,
+        WINHTTP_FLAG_SECURE);
+
+    if (hRequest)
+    {
+        std::string body = jsonBody.c_str();
+        WinHttpSendRequest(hRequest,
+                           L"Content-Type: application/json\r\n",
+                           (DWORD)-1L,
+                           (LPVOID)body.c_str(),
+                           (DWORD)body.size(),
+                           (DWORD)body.size(), 0);
+        WinHttpReceiveResponse(hRequest, nullptr);
+        WinHttpCloseHandle(hRequest);
+    }
+
+    WinHttpCloseHandle(hConnect);
+    WinHttpCloseHandle(hSession);
+}
+
+static void SendCrashReportToDiscord(SString message)
+{
+    SString playerNick;
+    CVARS_GET("nick", playerNick);
+
+    if (playerNick.empty())
+    {
+        playerNick = "** Unknown player";
+    }
+
+    SString header = playerNick + " crashed!\n";
+
+    if (message.empty())
+    {
+        message = header + "Could not generate crasha report. Something has gone horribly wrong";
+    }
+    else
+    {
+        message = header + message;
+    }
+
+    SString escaped;
+
+    if (!message.empty())
+    {
+        escaped.reserve(message.length() + 64);
+        for (unsigned char c : message)
+        {
+            switch (c)
+            {
+                case '"':
+                    escaped += "\\\"";
+                    break;
+                case '\\':
+                    escaped += "\\\\";
+                    break;
+                case '\n':
+                    escaped += "\\n";
+                    break;
+                case '\r':
+                    escaped += "\\r";
+                    break;
+                case '\t':
+                    escaped += "\\t";
+                    break;
+                case '\b':
+                    escaped += "\\b";
+                    break;
+                case '\f':
+                    escaped += "\\f";
+                    break;
+                default:
+                    if (c < 0x20)
+                    {
+                        char buf[8];
+                        snprintf(buf, sizeof(buf), "\\u%04X", c);
+                        escaped += buf;
+                    }
+                    else
+                        escaped += static_cast<char>(c);
+                    break;
+            }
+        }
+    }
+
+    constexpr std::size_t kOverhead = 500;
+    constexpr std::size_t kChunkSize = 2000 - kOverhead;
+
+    std::size_t offset = 0;
+    int partNumber = 1;
+    const std::size_t totalLength = escaped.length();
+    const int totalParts = static_cast<int>((totalLength + kChunkSize - 1) / kChunkSize);
+
+    while (offset < totalLength)
+    {
+        const std::size_t chunkLen = std::min(kChunkSize, totalLength - offset);
+        SString           chunk = escaped.substr(offset, chunkLen);
+
+        if (totalParts > 1)
+            chunk = SString("[%d/%d]\\n", partNumber, totalParts) + chunk;
+
+        SendToDiscordWebhook(chunk);
+        Sleep(500);
+
+        offset += chunkLen;
+        partNumber++;
+    }
+}
+
 long WINAPI CCrashDumpWriter::HandleExceptionGlobal(_EXCEPTION_POINTERS* pException)
 {
     // Absolute first action - log that we entered the handler (before anything can fail)
@@ -1660,6 +1792,16 @@ long WINAPI CCrashDumpWriter::HandleExceptionGlobal(_EXCEPTION_POINTERS* pExcept
         {
             SAFE_DEBUG_OUTPUT("CCrashDumpWriter: Callback exception may have caused secondary fault during core log\n");
         }
+    }
+
+    if (coreLogSucceeded)
+    {
+        SString crashInfo = GetApplicationSetting("diagnostics", "last-crash-info");
+        SendCrashReportToDiscord(crashInfo);
+    }
+    else
+    {
+        SendCrashReportToDiscord("");
     }
 
     try
@@ -1858,8 +2000,6 @@ void CCrashDumpWriter::DumpCoreLog(_EXCEPTION_POINTERS* pException, CExceptionIn
     time_t timeTemp;
     time(&timeTemp);
 
-    const auto strMTAVersionFull = SString("%s.%s", MTA_DM_BUILDTAG_LONG, *GetApplicationSetting("mta-version-ext").SplitRight(".", nullptr, -2));
-
     constexpr auto kNullInstructionPointer = 0u;
     static_assert(kNullInstructionPointer == 0u, "Null instruction pointer must be zero");
     
@@ -1871,7 +2011,7 @@ void CCrashDumpWriter::DumpCoreLog(_EXCEPTION_POINTERS* pException, CExceptionIn
     const auto eipAnnotation = isNullJump ? kNullJumpAnnotation : kEmptyAnnotation;
 
     SString strInfo{};
-    strInfo += SString("Version = %s\n", strMTAVersionFull.c_str());
+    strInfo += SString("Version = %s\n", PM_VERSIONSTRING);
     strInfo += SString("Time = %s", ctime(&timeTemp));
     strInfo += SString("Module = %s\n", pExceptionInformation->GetModulePathName());
     strInfo += SString("Code = 0x%08X\n", pExceptionInformation->GetCode());
@@ -3083,7 +3223,7 @@ void CCrashDumpWriter::DumpMiniDump(_EXCEPTION_POINTERS* pException, CExceptionI
         const wchar_t* emergencyMessage =
             L"Project Monky has crashed.\n\n"
             L"The usual crash dialog has also failed, with this as fallback.\n\n"
-            L"Contact support on the Project Monky discord: https://discord.gg/95xRda4T\n\n"
+            L"Your crash log has been shared with us. We will try our best to fix this as soon as possible.\n\n"
             L"The game will now close.";
 
         MessageBoxW(nullptr, emergencyMessage, L"Project Monky - Fatal Error",

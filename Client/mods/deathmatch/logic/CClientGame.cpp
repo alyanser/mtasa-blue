@@ -714,10 +714,10 @@ bool CClientGame::StartGame(const char* szNick, const char* szPassword, eServerT
             pBitStream->Write(static_cast<unsigned short>(MTA_DM_BITSTREAM_VERSION));
 
             //// hu3hu3hu3hu3
-            pBitStream->Write((unsigned char)0x01);
+            pBitStream->Write((unsigned char)PM_VERSION_MAJOR);
             pBitStream->Write((unsigned char)0xDE);
             pBitStream->Write((unsigned char)0xAD);
-            pBitStream->Write((unsigned char)0x00);
+            pBitStream->Write((unsigned char)PM_VERSION_MINOR);
 
             SString strPlayerVersion("%d.%d.%d-%d.%05d.%d", MTASA_VERSION_MAJOR, MTASA_VERSION_MINOR, MTASA_VERSION_MAINTENANCE, MTASA_VERSION_TYPE,
                                      MTASA_VERSION_BUILD, g_pNet->GetNetRev());

@@ -82,8 +82,6 @@ const SDialogItemInfo g_ProgressDialogItems[] = {
 const SDialogItemInfo g_CrashedDialogItems[] = {
     {0, 0, _td("Project Monky has encountered a problem")},
     {IDC_CRASH_HEAD, 0, _td("Crash information")},
-    {IDC_SEND_DUMP_CHECK, 0, _td("Tick the check box to send this crash info to MTA devs using the 'internet'")},
-    {IDC_SEND_DESC_STATIC, 0, _td("Doing so will increase the chance of this crash being fixed.")},
     {IDC_RESTART_QUESTION_STATIC, 1, _td("Do you want to restart Project Monky ?")},
     {IDCANCEL, 0, dialogStringsNo},
     {IDOK, 0, dialogStringsYes},
@@ -94,13 +92,13 @@ const SDialogItemInfo g_GraphicsDllDialogItems[] = {
     {0, 0, _td("Project Monky - Warning")},
     {IDC_D3DDLL_TEXT1, 0, _td("Your Grand Theft Auto: San Andreas install directory contains these files:")},
     {IDC_D3DDLL_TEXT2, 0,
-     _td("These files are not required and may interfere with the graphical features in this version of MTA:SA.\n\n"
+     _td("These files are not required and may interfere with the graphical features in this version of Project Monky.\n\n"
          "It is recommended that you remove or rename these files.")},
     {IDC_NO_ACTION, 1, _td("Keep these files, but also show this warning on next start")},
     {IDC_CHECK_NOT_AGAIN, 1, _td("Do not remind me about these files again")},
     {IDC_APPLY_AUTOMATIC_CHANGES, 1, _td("Rename these files from *.dll to *.dll.bak")},
     {IDC_BUTTON_SHOW_DIR, 0, _td("Show me these files")},
-    {IDOK, 0, _td("Play MTA:SA")},
+    {IDOK, 0, _td("Play Project Monky")},
     {IDCANCEL, 0, dialogStringsQuit},
     {-1},
 };

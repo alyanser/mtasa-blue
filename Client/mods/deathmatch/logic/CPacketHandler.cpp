@@ -637,7 +637,7 @@ void CPacketHandler::Packet_ServerDisconnected(NetBitStreamInterface& bitStream)
             {_td("This server requires a non-modifed gta_sa.exe")},
             {_td("Please replace gta_sa.exe")},
             {_td("This server does not allow Wine")},
-            {_td("Ensure no other program is modifying MTA:SA")},
+            {_td("Ensure no other program is modifying Project Monky")},
         };
         for (auto szSnippet : snippetList)
         {

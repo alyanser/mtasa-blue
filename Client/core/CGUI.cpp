@@ -164,7 +164,7 @@ void CLocalGUI::CreateWindows(bool bGameIsAlreadyLoaded)
 
     // Create the overlayed version labels
     CVector2D ScreenSize = pGUI->GetResolution();
-    SString   strText = "Project Monky v1.0";
+    SString   strText = "Project Monky v" PM_VERSIONSTRING;
 
     m_pLabelVersionTag = pGUI->CreateLabel(strText);
     const auto fTextWidth = m_pLabelVersionTag->GetTextExtent();

@@ -1552,7 +1552,7 @@ bool CConsoleCommands::ReloadModule(CConsole* pConsole, const char* szArguments,
 
 bool CConsoleCommands::Ver(CConsole* pConsole, const char* szArguments, CClient* pClient, CClient* pEchoClient)
 {
-    pEchoClient->SendConsole("Project Monky v1.0");
+    pEchoClient->SendConsole("Project Monky v" PM_VERSIONSTRING);
     return true;
 }
 

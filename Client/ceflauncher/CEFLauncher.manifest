@@ -7,7 +7,7 @@
                       version="1.0.0.0"
                       processorArchitecture="x86" />
 
-    <description>MTA:SA CEF (Chromium Embedded Framework) Launcher</description>
+    <description>Project Monky CEF (Chromium Embedded Framework) Launcher</description>
 
     <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
         <application>

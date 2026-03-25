@@ -2157,7 +2157,7 @@ void CVersionUpdater::_DialogDataFilesQuestion()
     // Display message
     GetQuestionBox().Reset();
     GetQuestionBox().SetTitle(_("ERROR"));
-    GetQuestionBox().SetMessage(_("Some MTA:SA data files are missing.\n\n\nPlease reinstall MTA:SA"));
+    GetQuestionBox().SetMessage(_("Some Project Monky data files are missing.\n\n\nPlease reinstall Project Monky"));
     GetQuestionBox().SetButton(0, _("Ok"));
     GetQuestionBox().Show();
     _PollAnyButton();

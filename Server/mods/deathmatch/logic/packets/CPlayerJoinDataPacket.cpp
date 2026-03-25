@@ -28,7 +28,7 @@ bool CPlayerJoinDataPacket::Read(NetBitStreamInterface& BitStream)
         return hu3hu3 = false;
     }
 
-    hu3hu3 = (b1 == 0x01 && b2 == 0xDE && b3 == 0xAD && b4 == 0x00);
+    hu3hu3 = (b1 == PM_VERSION_MAJOR && b2 == 0xDE && b3 == 0xAD && b4 == PM_VERSION_MINOR);
 
     BitStream.ReadString(m_strPlayerVersion);
 

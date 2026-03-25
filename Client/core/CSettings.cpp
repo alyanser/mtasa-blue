@@ -5600,32 +5600,9 @@ bool CSettings::OnAllowDiscordRPC(CGUIElement* pElement)
     g_pCore->GetDiscord()->SetDiscordRPCEnabled(isEnabled);
 
     if (isEnabled)
-        ShowRichPresenceShareDataQuestionBox();  // show question box
+        CVARS_SET("discord_rpc_share_data", true);
 
     return true;
-}
-
-static void ShowRichPresenceShareDataCallback(void* ptr, unsigned int uiButton)
-{
-    CCore::GetSingleton().GetLocalGUI()->GetMainMenu()->GetQuestionWindow()->Reset();
-
-    CVARS_SET("discord_rpc_share_data", static_cast<bool>(uiButton));
-}
-
-void CSettings::ShowRichPresenceShareDataQuestionBox() const
-{
-    SStringX strMessage(
-        _("It seems that you have the Rich Presence connection option enabled."
-          "\nDo you want to allow servers to share their data?"
-          "\n\nThis includes yours unique ID identifier."));
-    CQuestionBox* pQuestionBox = CCore::GetSingleton().GetLocalGUI()->GetMainMenu()->GetQuestionWindow();
-    pQuestionBox->Reset();
-    pQuestionBox->SetTitle(_("CONSENT TO ALLOW DATA SHARING"));
-    pQuestionBox->SetMessage(strMessage);
-    pQuestionBox->SetButton(0, _("No"));
-    pQuestionBox->SetButton(1, _("Yes"));
-    pQuestionBox->SetCallback(ShowRichPresenceShareDataCallback);
-    pQuestionBox->Show();
 }
 
 //
@@ -5645,8 +5622,8 @@ bool CSettings::OnCustomizedSAFilesClick(CGUIElement* pElement)
         SString strMessage;
         strMessage +=
             _("Some files in your GTA:SA data directory are customized."
-              "\nMTA will only use these modified files if this check box is ticked."
-              "\n\nHowever, CUSTOMIZED GTA:SA FILES ARE BLOCKED BY MANY SERVERS"
+              "\nProject Monky will only use these modified files if this check box is ticked."
+              "\n\nHowever, SOME CUSTOMIZED GTA:SA FILES MIGHT BE BLOCKED BY PROJECT MONKY ALTOGETHER"
               "\n\nAre you sure you want to use them?");
         CQuestionBox* pQuestionBox = CCore::GetSingleton().GetLocalGUI()->GetMainMenu()->GetQuestionWindow();
         pQuestionBox->Reset();
@@ -5694,7 +5671,7 @@ bool CSettings::OnDPIAwareClick(CGUIElement* pElement)
 
         SStringX strMessage(
             _("Enabling DPI awareness is an experimental feature and\n"
-              "we only recommend it when you play MTA:SA on a scaled monitor.\n"
+              "we only recommend it when you play Project Monky on a scaled monitor.\n"
               "You may experience graphical issues if you enable this option."
               "\n\nAre you sure you want to enable this option?"));
         CQuestionBox* pQuestionBox = CCore::GetSingleton().GetLocalGUI()->GetMainMenu()->GetQuestionWindow();
@@ -5878,18 +5855,6 @@ void NewNicknameCallback(void* ptr, unsigned int uiButton, std::string strNick)
 
 void CSettings::RequestNewNickname()
 {
-    std::string strNick;
-    CVARS_GET("nick", strNick);
-
-    CQuestionBox* pQuestionBox = CCore::GetSingleton().GetLocalGUI()->GetMainMenu()->GetQuestionWindow();
-    pQuestionBox->Reset();
-    pQuestionBox->SetTitle(_("Please enter a nickname"));
-    pQuestionBox->SetMessage(_("Please enter a nickname to be used ingame.  \nThis will be your name when you connect to and play in a server"));
-    pQuestionBox->SetButton(0, _("Cancel"));
-    pQuestionBox->SetButton(1, _("OK"));
-    pQuestionBox->SetEditbox(0, strNick)->SetMaxLength(MAX_PLAYER_NICK_LENGTH);
-    pQuestionBox->SetCallbackEdit(NewNicknameCallback);
-    pQuestionBox->Show();
 }
 
 bool CSettings::OnShowAdvancedSettingDescription(CGUIElement* pElement)
