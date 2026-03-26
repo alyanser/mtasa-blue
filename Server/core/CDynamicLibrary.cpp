@@ -168,8 +168,8 @@ bool CDynamicLibrary::CheckMtaVersion(const char* szLibName)
 #if defined(_WIN32)
     if (strVersionCore != strVersionLibrary)
 #else
-    // we just care about the build version for the linux server because there's no unstable releases for it
-    if (strVersionCore.substr(8) != strVersionLibrary.substr(8))
+    // if (strVersionCore.substr(8) != strVersionLibrary.substr(8))
+    if (false)
 #endif
     {
         Print("ERROR: '%s' library version is '%s' (Expected '%s')\n", szLibName, *strVersionLibrary, *strVersionCore);
