@@ -55,11 +55,11 @@ Var UninstallExePath
 
 !ifndef MAJOR_VER
     !define MAJOR_VER "1"
-    !define MINOR_VER "7"
+    !define MINOR_VER "6"
     !define MAINT_VER "0"
 !endif
 !define 0.0 "${MAJOR_VER}.${MINOR_VER}"
-!define MASK.0.0 "1.0"
+!define MASK.0.0 "1.1"
 !define 0.0.0 "${MAJOR_VER}.${MINOR_VER}.${MAINT_VER}"
 
 !define APPLICATION_ID "Project Monky ${MASK.0.0}"

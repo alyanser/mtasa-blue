@@ -22,10 +22,10 @@ CTransferBox::CTransferBox(TransferBoxType transferType) : m_GUI(g_pCore->GetGUI
     switch (transferType)
     {
         case TransferBoxType::MAP_DOWNLOAD:
-            m_titleProgressPrefix = _("Map download progress:");
+            m_titleProgressPrefix = _("Peeling Bananas Progress:");
             break;
         default:
-            m_titleProgressPrefix = _("Download Progress:");
+            m_titleProgressPrefix = _("Petting Monkey Progress:");
     }
 
     m_visible.set(TB_VISIBILITY_CLIENT_SCRIPT);
@@ -41,7 +41,7 @@ void CTransferBox::CreateTransferWindow()
     // Find our largest piece of text, so we can size accordingly
     std::string largeTextSample = m_titleProgressPrefix + " " + SString(_("%s of %s"), "999.99 kB", "999.99 kB");
     float       fTransferBoxWidth = m_GUI->GetTextExtent(largeTextSample.c_str(), "default-bold-small");
-    fTransferBoxWidth = std::max<float>(fTransferBoxWidth, m_GUI->GetTextExtent(_("Disconnect to cancel download"), "default-normal"));
+    fTransferBoxWidth = std::max<float>(fTransferBoxWidth, m_GUI->GetTextExtent(_("Disconnect to cancel"), "default-normal"));
 
     // Add some padding to our text for the size of the window
     fTransferBoxWidth += 80;
@@ -62,7 +62,7 @@ void CTransferBox::CreateTransferWindow()
     m_progressBar->SetPosition(CVector2D(0, TRANSFERBOX_YSTART));
     m_progressBar->SetSize(CVector2D(fTransferBoxWidth, TRANSFERBOX_HEIGHT - TRANSFERBOX_YSTART - TRANSFERBOX_SPACER));
 
-    m_infoLabel.reset(m_GUI->CreateLabel(m_progressBar.get(), _("Disconnect to cancel download")));
+    m_infoLabel.reset(m_GUI->CreateLabel(m_progressBar.get(), _("Disconnect to cancel")));
     float fTempX = (m_progressBar->GetSize().fX - m_GUI->GetTextExtent(m_infoLabel->GetText().c_str()) - TRANSFERBOX_ICONSIZE - 4) * 0.5f;
     m_infoLabel->SetPosition(CVector2D(fTempX + TRANSFERBOX_ICONSIZE + 4, 0));
     m_infoLabel->SetSize(CVector2D(fTransferBoxWidth, TRANSFERBOX_PROGRESSHEIGHT));
