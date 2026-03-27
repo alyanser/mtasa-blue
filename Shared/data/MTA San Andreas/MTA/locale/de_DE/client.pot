@@ -18,14 +18,14 @@ msgstr ""
 "X-Crowdin-File-ID: 87\n"
 
 #: Client/loader/MainFunctions.cpp:248
-msgid "Trouble restarting MTA:SA\n\n"
+msgid "Trouble restarting Project Monky\n\n"
 "If the problem persists, open Task Manager and\n"
 "stop the 'gta_sa.exe' and 'Multi Theft Auto.exe' processes\n\n\n"
-"Try to launch MTA:SA again?"
-msgstr "Problem beim Neustart von MTA:SA\n\n"
+"Try to launch Project Monky again?"
+msgstr "Problem beim Neustart von Project Monky\n\n"
 "Wenn dieses Problem weiterhin besteht, öffne den Task Manager und\n"
 "beende die 'gta_sa.exe' und 'Multi Theft Auto.exe' Prozesse\n\n\n"
-"Starten von MTA:SA erneut versuchen?"
+"Starten von Project Monky erneut versuchen?"
 
 #. Show a message that the connection timed out and abort
 #. Show failed message and abort the attempt
@@ -77,16 +77,16 @@ msgstr "Eine weitere Instanz von MTA läuft bereits.\n\n"
 "Möchtest du sie beenden?"
 
 #: Client/loader/MainFunctions.cpp:294
-msgid "Are you having problems running MTA:SA?.\n\n"
+msgid "Are you having problems running Project Monky?.\n\n"
 "Do you want to revert to an earlier version?"
-msgstr "Hast du Probleme beim Starten von MTA:SA?\n\n"
+msgstr "Hast du Probleme beim Starten von Project Monky?\n\n"
 "Möchtest du auf eine ältere Version zurücksetzen?"
 
 #: Client/loader/MainFunctions.cpp:324
-msgid "There seems to be a problem launching MTA:SA.\n"
+msgid "There seems to be a problem launching Project Monky.\n"
 "Resetting GTA settings can sometimes fix this problem.\n\n"
 "Do you want to reset GTA settings now?"
-msgstr "Es scheint ein Problem beim Starten von MTA:SA vorzuliegen.\n"
+msgstr "Es scheint ein Problem beim Starten von Project Monky vorzuliegen.\n"
 "Manchmal kann das Zurücksetzen der GTA Einstellungen dieses Problem beheben.\n\n"
 "Möchtest du die GTA Einstellungen jetzt zurücksetzen?"
 
@@ -103,16 +103,16 @@ msgstr "Datei konnte nicht gelöscht werden: '%s'"
 
 #. No settings to delete, or can't find them
 #: Client/loader/MainFunctions.cpp:352
-msgid "Are you having problems running MTA:SA?.\n\n"
+msgid "Are you having problems running Project Monky?.\n\n"
 "Do you want to see some online help?"
-msgstr "Hast du ein Problem beim Starten von MTA:SA?\n\n"
+msgstr "Hast du ein Problem beim Starten von Project Monky?\n\n"
 "Möchtest du dazu eine Onlinehilfe sehen?"
 
 #. Inform user
 #: Client/loader/MainFunctions.cpp:388
-msgid "Are you having problems running MTA:SA?.\n\n"
+msgid "Are you having problems running Project Monky?.\n\n"
 "Do you want to change the following setting?"
-msgstr "Hast du Probleme mit MTA:SA?.\n\n"
+msgstr "Hast du Probleme mit Project Monky?.\n\n"
 "Möchtest du folgende Einstellung ändern?"
 
 #: Client/loader/MainFunctions.cpp:389 Client/core/CSettings.cpp:692
@@ -126,17 +126,17 @@ msgid "Borderless window"
 msgstr "Randloses Fenster"
 
 #: Client/loader/MainFunctions.cpp:431
-msgid "Are you having problems running MTA:SA?.\n\n"
+msgid "Are you having problems running Project Monky?.\n\n"
 "Try disabling the following products for GTA and MTA:"
-msgstr "Hast du Probleme mit MTA:SA?.\n\n"
+msgstr "Hast du Probleme mit Project Monky?.\n\n"
 "Versuche die folgenden Produkte für GTA und MTA zu deaktivieren:"
 
 #: Client/loader/MainFunctions.cpp:465
 msgid "WARNING\n\n"
-"MTA:SA has detected unusual activity.\n"
+"Project Monky has detected unusual activity.\n"
 "Please run a virus scan to ensure your system is secure.\n\n"
 msgstr "WARNUNG\n\n"
-"MTA:SA hat ungewöhnliche Aktivitäten erkannt.\n"
+"Project Monky hat ungewöhnliche Aktivitäten erkannt.\n"
 "Bitte starte einen Virusscan, um die Sicherheit deines Systems sicherzustellen.\n\n"
 
 #: Client/loader/MainFunctions.cpp:468
@@ -145,8 +145,8 @@ msgid "The detected file was:  %s\n"
 msgstr "Die erkannte Datei ist:  %s\n"
 
 #: Client/loader/MainFunctions.cpp:602
-msgid "An instance of GTA: San Andreas is already running. It needs to be terminated before MTA:SA can be started. Do you want to do that now?"
-msgstr "Eine Instanz von GTA: San Andreas läuft bereits. Diese muss beendet werden, bevor MTA:SA gestartet werden kann. Möchtest du dies jetzt tun?"
+msgid "An instance of GTA: San Andreas is already running. It needs to be terminated before Project Monky can be started. Do you want to do that now?"
+msgstr "Eine Instanz von GTA: San Andreas läuft bereits. Diese muss beendet werden, bevor Project Monky gestartet werden kann. Möchtest du dies jetzt tun?"
 
 #: Client/loader/MainFunctions.cpp:603 Client/loader/MainFunctions.cpp:610
 #: Client/loader/MainFunctions.cpp:1219
@@ -169,13 +169,13 @@ msgid "The path to your installation of GTA: San Andreas contains unsupported (u
 msgstr "Der Pfad zu deiner Installation von GTA: San Andreas enthält ungültige Unicode Zeichen. Bitte ändere den Pfad deiner GTA: San Andreas Installation, sodass dieser nur ASCII Zeichen enthält und installiere Multi Theft Auto: San Andreas neu."
 
 #: Client/loader/MainFunctions.cpp:648
-msgid "The path to your installation of 'MTA:SA' or 'GTA: San Andreas'\n"
+msgid "The path to your installation of 'Project Monky' or 'GTA: San Andreas'\n"
 "contains a ';' (semicolon).\n\n"
-" If you experience problems when running MTA:SA,\n"
+" If you experience problems when running Project Monky,\n"
 " move your installation(s) to a path that does not contain a semicolon."
-msgstr "Der Pfad zu deiner Installation von 'MTA:SA' oder 'GTA: San Andreas'\n"
+msgstr "Der Pfad zu deiner Installation von 'Project Monky' oder 'GTA: San Andreas'\n"
 "enthält ';' (Semikolon).\n\n"
-" Wenn du Probleme bei der Ausführung von MTA:SA hast,\n"
+" Wenn du Probleme bei der Ausführung von Project Monky hast,\n"
 " ändere bitte deinen Installationspfad auf einen Pfad der kein Semikolon enthält."
 
 #: Client/loader/MainFunctions.cpp:810
@@ -227,23 +227,23 @@ msgstr "Die Datei %s wurde verändert. Möglicherweise handelt es sich um einen 
 "Siehe online Hilfe, falls MTA nicht korrekt funktioniert."
 
 #: Client/loader/MainFunctions.cpp:907
-msgid ".asi files are in the 'MTA:SA' or 'GTA: San Andreas' installation directory.\n\n"
-"Remove these .asi files if you experience problems with MTA:SA."
-msgstr ".asi Dateien befinden sich im 'MTA:SA' oder 'GTA: San Andreas' Installationsverzeichnis.\n\n"
-"Entferne die .asi Dateien, wenn du Probleme mit MTA:SA feststellst."
+msgid ".asi files are in the 'Project Monky' or 'GTA: San Andreas' installation directory.\n\n"
+"Remove these .asi files if you experience problems with Project Monky."
+msgstr ".asi Dateien befinden sich im 'Project Monky' oder 'GTA: San Andreas' Installationsverzeichnis.\n\n"
+"Entferne die .asi Dateien, wenn du Probleme mit Project Monky feststellst."
 
 #: Client/loader/MainFunctions.cpp:1009
-msgid "File version mismatch error. Reinstall MTA:SA if you experience problems.\n"
-msgstr "Dateiversion stimmt nicht überein. Installiere MTA:SA neu, wenn du Probleme hast.\n"
+msgid "File version mismatch error. Reinstall Project Monky if you experience problems.\n"
+msgstr "Dateiversion stimmt nicht überein. Installiere Project Monky neu, wenn du Probleme hast.\n"
 
 #: Client/loader/MainFunctions.cpp:1018
-msgid "Some files are missing. Reinstall MTA:SA if you experience problems.\n"
-msgstr "Einige Dateien fehlen. Installiere MTA:SA neu, wenn Probleme auftreten.\n"
+msgid "Some files are missing. Reinstall Project Monky if you experience problems.\n"
+msgstr "Einige Dateien fehlen. Installiere Project Monky neu, wenn Probleme auftreten.\n"
 
 #: Client/loader/MainFunctions.cpp:1030
-msgid "MTA:SA is not compatible with Windows 'Safe Mode'.\n\n"
+msgid "Project Monky is not compatible with Windows 'Safe Mode'.\n\n"
 "Please restart your PC.\n"
-msgstr "MTA:SA ist nicht kompatibel mit dem 'abgesicherten Modus'.\n\n"
+msgstr "Project Monky ist nicht kompatibel mit dem 'abgesicherten Modus'.\n\n"
 "Bitte starte deinen PC neu.\n"
 
 #: Client/loader/MainFunctions.cpp:1123
@@ -327,8 +327,8 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 #: Client/loader/Dialogs.cpp:55
-msgid "MTA: San Andreas has encountered a problem"
-msgstr "MTA: San Andreas ist auf ein Problem gestoßen"
+msgid "Project Monky has encountered a problem"
+msgstr "Project Monky ist auf ein Problem gestoßen"
 
 #: Client/loader/Dialogs.cpp:56
 msgid "Crash information"
@@ -343,19 +343,19 @@ msgid "Doing so will increase the chance of this crash being fixed."
 msgstr "Wenn du dies machst, kann der Fehler leichter behoben werden."
 
 #: Client/loader/Dialogs.cpp:59
-msgid "Do you want to restart MTA: San Andreas ?"
-msgstr "Möchten du MTA: San Andreas neustarten?"
+msgid "Do you want to restart Project Monky ?"
+msgstr "Möchten du Project Monky neustarten?"
 
 #: Client/loader/Dialogs.cpp:66
-msgid "MTA: San Andreas - Warning"
-msgstr "MTA: San Andreas - Warnung"
+msgid "Project Monky - Warning"
+msgstr "Project Monky - Warnung"
 
 #: Client/loader/Dialogs.cpp:67
 msgid "Your Grand Theft Auto: San Andreas install directory contains these files:"
 msgstr "Das Installationsverzeichnis von Grand Theft Auto: San Andreas enthält diese Dateien:"
 
 #: Client/loader/Dialogs.cpp:69
-msgid "These files are not required and may interfere with the graphical features in this version of MTA:SA.\n\n"
+msgid "These files are not required and may interfere with the graphical features in this version of Project Monky.\n\n"
 "It is recommended that you remove or rename these files."
 msgstr "Diese Dateien werden nicht benötigt und können die grafischen Funktionen in dieser Version von MTA: SA beeinträchtigen.\n\n"
 "Es wird empfohlen, diese Dateien zu entfernen oder umzubenennen."
@@ -377,12 +377,12 @@ msgid "Show me these files"
 msgstr "Zeigen Sie mir diese Dateien"
 
 #: Client/loader/Dialogs.cpp:75
-msgid "Play MTA:SA"
-msgstr "MTA:SA spielen"
+msgid "Play Project Monky"
+msgstr "Project Monky spielen"
 
 #: Client/loader/Dialogs.cpp:81
-msgid "MTA: San Andreas - Confusing options"
-msgstr "MTA: San Andreas - Verwirrende Optionen"
+msgid "Project Monky - Confusing options"
+msgstr "Project Monky - Verwirrende Optionen"
 
 #: Client/loader/Dialogs.cpp:82
 msgid "NVidia Optimus detected!"
@@ -425,8 +425,8 @@ msgid "Don't show again"
 msgstr "Nicht mehr anzeigen"
 
 #: Client/loader/Dialogs.cpp:98 Client/game_sa/CSettingsSA.cpp:859
-msgid "MTA: San Andreas"
-msgstr "MTA: San Andreas"
+msgid "Project Monky"
+msgstr "Project Monky"
 
 #: Client/loader/Dialogs.cpp:99
 msgid "Warning: Could not detect anti-virus product"
@@ -484,18 +484,18 @@ msgstr "Fertig!"
 
 #: Client/loader/CInstallManager.cpp:361 Client/loader/Utils.cpp:965
 #, c-format
-msgid "MTA:SA needs Administrator access for the following task:\n\n"
+msgid "Project Monky needs Administrator access for the following task:\n\n"
 "  '%s'\n\n"
 "Please confirm in the next window."
-msgstr "MTA:SA benötigt Administratorzugriff für die folgende Aufgabe:\n\n"
+msgstr "Project Monky benötigt Administratorzugriff für die folgende Aufgabe:\n\n"
 "  '%s'\n\n"
 "Bitte bestätigen Sie dies im nächsten Fenster."
 
 #: Client/loader/CInstallManager.cpp:376
 #, c-format
-msgid "MTA:SA could not complete the following task:\n\n"
+msgid "Project Monky could not complete the following task:\n\n"
 "  '%s'\n"
-msgstr "MTA:SA konnte die folgende Operation nicht erfolgreich durchführen:\n\n"
+msgstr "Project Monky konnte die folgende Operation nicht erfolgreich durchführen:\n\n"
 "  '%s'\n"
 
 #: Client/loader/CInstallManager.cpp:426
@@ -505,8 +505,8 @@ msgstr "** Der Absturz wurde durch einen Grafiktreiberfehler verursacht **\n\n"
 "** Bitte aktualisieren Sie Ihre Grafiktreiber **"
 
 #: Client/loader/CInstallManager.cpp:532
-msgid "Install updated MTA:SA files"
-msgstr "Aktualisierte MTA:SA-Dateien installieren"
+msgid "Install updated Project Monky files"
+msgstr "Aktualisierte Project Monky-Dateien installieren"
 
 #: Client/loader/CInstallManager.cpp:552
 msgid "Could not update due to file conflicts. Please close other applications and retry"
@@ -522,53 +522,53 @@ msgid "Create GTA:SA junctions"
 msgstr "GTA:SA-Kreuzungen erstellen"
 
 #: Client/loader/CInstallManager.cpp:657
-msgid "MTA:SA cannot launch because copying a file failed:"
-msgstr "MTA:SA kann nicht starten, weil das Kopieren einer Datei fehlgeschlagen ist:"
+msgid "Project Monky cannot launch because copying a file failed:"
+msgstr "Project Monky kann nicht starten, weil das Kopieren einer Datei fehlgeschlagen ist:"
 
 #: Client/loader/CInstallManager.cpp:663 Client/loader/CInstallManager.cpp:703
-msgid "MTA:SA cannot launch because an MTA:SA file is incorrect or missing:"
-msgstr "MTA:SA kann nicht gestartet werden, da eine MTA:SA Datei fehlerhaft ist oder fehlt:"
+msgid "Project Monky cannot launch because an Project Monky file is incorrect or missing:"
+msgstr "Project Monky kann nicht gestartet werden, da eine Project Monky Datei fehlerhaft ist oder fehlt:"
 
 #: Client/loader/CInstallManager.cpp:672
-msgid "Copy MTA:SA files"
-msgstr "MTA:SA-Dateien kopieren"
+msgid "Copy Project Monky files"
+msgstr "Project Monky-Dateien kopieren"
 
 #: Client/loader/CInstallManager.cpp:695 Client/loader/CInstallManager.cpp:773
-msgid "MTA:SA cannot launch because a GTA:SA file is incorrect or missing:"
-msgstr "MTA:SA kann nicht gestartet werden, da eine GTA:SA Datei fehlerhaft ist oder fehlt:"
+msgid "Project Monky cannot launch because a GTA:SA file is incorrect or missing:"
+msgstr "Project Monky kann nicht gestartet werden, da eine GTA:SA Datei fehlerhaft ist oder fehlt:"
 
 #: Client/loader/CInstallManager.cpp:780
 msgid "Patch GTA:SA dependency"
 msgstr "Patch GTA:SA-Abhängigkeit"
 
 #: Client/loader/CInstallManager.cpp:828
-msgid "MTA:SA cannot launch because the GTA:SA executable is incorrect or missing:"
-msgstr "MTA:SA kann nicht gestartet werden, weil die ausführbare Datei GTA:SA falsch ist oder fehlt:"
+msgid "Project Monky cannot launch because the GTA:SA executable is incorrect or missing:"
+msgstr "Project Monky kann nicht gestartet werden, weil die ausführbare Datei GTA:SA falsch ist oder fehlt:"
 
 #: Client/loader/CInstallManager.cpp:832
-msgid "Please check your anti-virus for a false-positive detection, try to add an exception for the GTA:SA executable and restart MTA:SA."
-msgstr "Bitte überprüfen Sie Ihr Antivirenprogramm auf eine falsch-positive Erkennung, versuchen Sie, eine Ausnahme für die ausführbare Datei GTA:SA hinzuzufügen und starten Sie MTA:SA neu."
+msgid "Please check your anti-virus for a false-positive detection, try to add an exception for the GTA:SA executable and restart Project Monky."
+msgstr "Bitte überprüfen Sie Ihr Antivirenprogramm auf eine falsch-positive Erkennung, versuchen Sie, eine Ausnahme für die ausführbare Datei GTA:SA hinzuzufügen und starten Sie Project Monky neu."
 
 #: Client/loader/CInstallManager.cpp:838
 msgid "Generate GTA:SA"
 msgstr "GTA:SA generieren"
 
 #: Client/loader/CInstallManager.cpp:853
-msgid "MTA:SA cannot launch because the GTA:SA executable is not loadable:"
-msgstr "MTA:SA kann nicht starten, weil die ausführbare Datei GTA:SA nicht geladen werden kann:"
+msgid "Project Monky cannot launch because the GTA:SA executable is not loadable:"
+msgstr "Project Monky kann nicht starten, weil die ausführbare Datei GTA:SA nicht geladen werden kann:"
 
 #: Client/loader/CInstallManager.cpp:860 Client/loader/CInstallManager.cpp:883
 msgid "Patch GTA:SA"
 msgstr "Aufnäher GTA:SA"
 
 #: Client/loader/CInstallManager.cpp:876
-msgid "MTA:SA cannot launch because patching GTA:SA has failed:"
-msgstr "MTA:SA kann nicht starten, weil das Patchen von GTA:SA fehlgeschlagen ist:"
+msgid "Project Monky cannot launch because patching GTA:SA has failed:"
+msgstr "Project Monky kann nicht starten, weil das Patchen von GTA:SA fehlgeschlagen ist:"
 
 #: Client/loader/CInstallManager.cpp:1057 Client/core/CCore.cpp:811
 #, c-format
-msgid "MTA:SA cannot continue because drive %s does not have enough space."
-msgstr "MTA:SA kann nicht fortgesetzt werden, da das Laufwerk %s nicht über genügend Speicherplatz verfügt."
+msgid "Project Monky cannot continue because drive %s does not have enough space."
+msgstr "Project Monky kann nicht fortgesetzt werden, da das Laufwerk %s nicht über genügend Speicherplatz verfügt."
 
 #: Client/loader/CInstallManager.cpp:1113
 msgid "Missing file:"
@@ -671,8 +671,8 @@ msgid "GTA:SA found errors in the file '%s'"
 msgstr "GTA:SA hat Fehler in der Datei '%s'"
 
 #: Client/loader/Utils.cpp:1713
-msgid "Did your computer restart when playing MTA:SA?"
-msgstr "Startete dein Computer neu als du MTA:SA gespielt hast?"
+msgid "Did your computer restart when playing Project Monky?"
+msgstr "Startete dein Computer neu als du Project Monky gespielt hast?"
 
 #: Client/loader/Utils.cpp:1778
 msgid "Please terminate the following programs before continuing:"
@@ -1671,11 +1671,11 @@ msgstr "VERÄNDERTE GTA:SA DATEIEN"
 
 #: Client/core/CSettings.cpp:4768
 msgid "Enabling DPI awareness is an experimental feature and\n"
-"we only recommend it when you play MTA:SA on a scaled monitor.\n"
+"we only recommend it when you play Project Monky on a scaled monitor.\n"
 "You may experience graphical issues if you enable this option.\n\n"
 "Are you sure you want to enable this option?"
 msgstr "Die Aktivierung der DPI-Erkennung ist eine experimentelle Funktion und\n"
-"wir empfehlen sie nur, wenn Sie MTA:SA auf einem skalierten Monitor spielen.\n"
+"wir empfehlen sie nur, wenn Sie Project Monky auf einem skalierten Monitor spielen.\n"
 "Es kann zu grafischen Problemen kommen, wenn Sie diese Option aktivieren.\n\n"
 "Sind Sie sicher, dass Sie diese Option aktivieren möchten?"
 
@@ -1782,20 +1782,20 @@ msgstr "Kann derzeit nicht auf Updates prüfen"
 #: Client/core/CVersionUpdater.cpp:1567 Client/core/CVersionUpdater.cpp:1587
 #: Client/core/CVersionUpdater.cpp:1605
 #, c-format
-msgid "MTA:SA %s required"
-msgstr "MTA:SA %s erforderlich"
+msgid "Project Monky %s required"
+msgstr "Project Monky %s erforderlich"
 
 #: Client/core/CVersionUpdater.cpp:1568
 #, c-format
-msgid "An updated version of MTA:SA %s is required to join the selected server.\n\n"
-"Do you want to download and install MTA:SA %s ?"
-msgstr "Eine neuere Version von MTA:SA %s ist notwendig, um diesen Server zu betreten.\n\n"
-"Möchtest du MTA:SA %s herunterladen und installieren?"
+msgid "An updated version of Project Monky %s is required to join the selected server.\n\n"
+"Do you want to download and install Project Monky %s ?"
+msgstr "Eine neuere Version von Project Monky %s ist notwendig, um diesen Server zu betreten.\n\n"
+"Möchtest du Project Monky %s herunterladen und installieren?"
 
 #: Client/core/CVersionUpdater.cpp:1588
 #, c-format
-msgid "Do you want to launch MTA:SA %s and connect to this server ?"
-msgstr "Möchtest du MTA:SA %s starten und dich mit diesem Server verbinden?"
+msgid "Do you want to launch Project Monky %s and connect to this server ?"
+msgstr "Möchtest du Project Monky %s starten und dich mit diesem Server verbinden?"
 
 #: Client/core/CVersionUpdater.cpp:1606
 msgid "It is not possible to connect at this time.\n\n"
@@ -1894,10 +1894,10 @@ msgid "ERROR"
 msgstr "FEHLER"
 
 #: Client/core/CVersionUpdater.cpp:2097
-msgid "Some MTA:SA data files are missing.\n\n\n"
-"Please reinstall MTA:SA"
-msgstr "Einige MTA:SA Dateien konnten nicht gefunden werden.\n\n\n"
-"Bitte installiere MTA:SA neu."
+msgid "Some Project Monky data files are missing.\n\n\n"
+"Please reinstall Project Monky"
+msgstr "Einige Project Monky Dateien konnten nicht gefunden werden.\n\n\n"
+"Bitte installiere Project Monky neu."
 
 #: Client/core/CVersionUpdater.cpp:2774
 #, c-format
@@ -3016,8 +3016,8 @@ msgid "This server does not allow Wine"
 msgstr "Dieser Server erlaubt Wine nicht"
 
 #: Client/mods/deathmatch/logic/CPacketHandler.cpp:640
-msgid "Ensure no other program is modifying MTA:SA"
-msgstr "Stelle sicher, dass kein anderes Programm MTA:SA modifiziert"
+msgid "Ensure no other program is modifying Project Monky"
+msgstr "Stelle sicher, dass kein anderes Programm Project Monky modifiziert"
 
 #: Client/mods/deathmatch/logic/CPacketHandler.cpp:654
 msgid "Time Remaining: "

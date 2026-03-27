@@ -42,7 +42,7 @@ void CCommandFuncs::Exit(const char* szParameters)
 void CCommandFuncs::Ver(const char* szParameters)
 {
     // Compose version string
-    const SString strVersion = "Project Monky v1.0\n";
+    const SString strVersion = "Project Monky v" PM_VERSIONSTRING "\n";
     CLocalGUI::GetSingleton().EchoConsole(strVersion);
 }
 

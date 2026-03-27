@@ -46,16 +46,16 @@
 #define CORE_MTA_FILLER             "cgui\\images\\mta_filler.png"
 #define CORE_MTA_VERSION            "cgui\\images\\version.png"
 
-//#define PLAY_SERVER_ADDRESS "localhost"
+#define PLAY_SERVER_ADDRESS "localhost"
+#define PLAY_SERVER_PORT 22004
+#define MAPPING_SERVER_ADDRESS "localhost"
+#define MAPPING_SERVER_PORT 22007
+
+//#define PLAY_SERVER_ADDRESS "24.187.78.102"
 //#define PLAY_SERVER_PORT 22004
-//#define MAPPING_SERVER_ADDRESS "localhost"
+//#define MAPPING_SERVER_ADDRESS "24.187.78.102"
 //#define MAPPING_SERVER_PORT 22007
 
-#define PLAY_SERVER_ADDRESS "24.187.78.102"
-#define PLAY_SERVER_PORT 22004
-#define MAPPING_SERVER_ADDRESS "24.187.78.102"
-#define MAPPING_SERVER_PORT 22007
-//
 //#define PLAY_SERVER_ADDRESS "135.148.32.184"
 //#define PLAY_SERVER_PORT 22004
 //#define MAPPING_SERVER_ADDRESS "135.148.32.184"

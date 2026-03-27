@@ -30,7 +30,7 @@ MTAEXPORT int Run(int iArgumentCount, char* szArguments[])
     {
         if (strcmp(szArguments[1], "--version") == 0 || strcmp(szArguments[1], "-v") == 0)
         {
-            printf(MTA_DM_FULL_STRING " v1.0\n");
+            printf(MTA_DM_FULL_STRING " v" PM_VERSIONSTRING "\n");
             return 1;
         }
     }

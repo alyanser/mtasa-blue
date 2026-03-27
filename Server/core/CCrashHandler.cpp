@@ -107,7 +107,7 @@ inline __attribute__((always_inline)) static void SaveBacktraceSummary()
     sFileName.Format("server_%s_%04d%02d%02d_%02d%02d.log", MTA_DM_BUILDTYPE, tm->tm_year + 1900, tm->tm_mon + 1, tm->tm_mday, tm->tm_hour, tm->tm_min);
 
     SString sContent;
-    sContent += SString("Project Monky Server v%s-r%d-%s crash report.\n", MTA_DM_VERSIONSTRING, MTASA_VERSION_BUILD, MTA_DM_BUILDTYPE);
+    sContent += SString("Project Monky Server v%s crash report.\n", PM_VERSIONSTRING);
     sContent += SString("%04d-%02d-%02d %02d:%02d\n", tm->tm_year + 1900, tm->tm_mon + 1, tm->tm_mday, tm->tm_hour, tm->tm_min);
     sContent += SString("Caught %d addresses ...\n\n", iAmount);
     sContent += "Backtrace:\n";

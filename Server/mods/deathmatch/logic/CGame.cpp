@@ -805,7 +805,7 @@ bool CGame::Start(int iArgumentCount, char* szArguments[])
     // Show the server header
     CLogger::LogPrintfNoStamp(
         "==================================================================\n"
-        "= Project Monky v1.0\n"
+        "= Project Monky v" PM_VERSIONSTRING "\n"
         "==================================================================\n"
         "= Server name      : %s\n"
         "= Server IP address: %s\n"
