@@ -19,14 +19,7 @@
 
 CTransferBox::CTransferBox(TransferBoxType transferType) : m_GUI(g_pCore->GetGUI())
 {
-    switch (transferType)
-    {
-        case TransferBoxType::MAP_DOWNLOAD:
-            m_titleProgressPrefix = _("Peeling Bananas Progress:");
-            break;
-        default:
-            m_titleProgressPrefix = _("Petting Monkey Progress:");
-    }
+    m_titleProgressPrefix = _("Peeling Bananas...");
 
     m_visible.set(TB_VISIBILITY_CLIENT_SCRIPT);
     m_visible.set(TB_VISIBILITY_SERVER_SCRIPT);
@@ -39,7 +32,7 @@ CTransferBox::CTransferBox(TransferBoxType transferType) : m_GUI(g_pCore->GetGUI
 void CTransferBox::CreateTransferWindow()
 {
     // Find our largest piece of text, so we can size accordingly
-    std::string largeTextSample = m_titleProgressPrefix + " " + SString(_("%s of %s"), "999.99 kB", "999.99 kB");
+    std::string largeTextSample = m_titleProgressPrefix;
     float       fTransferBoxWidth = m_GUI->GetTextExtent(largeTextSample.c_str(), "default-bold-small");
     fTransferBoxWidth = std::max<float>(fTransferBoxWidth, m_GUI->GetTextExtent(_("Disconnect to cancel"), "default-normal"));
 
@@ -102,7 +95,7 @@ void CTransferBox::SetDownloadProgress(uint64_t downloadedSizeTotal)
 {
     SString current = GetDataUnit(downloadedSizeTotal);
     SString total = GetDataUnit(m_downloadTotalSize);
-    SString progress = m_titleProgressPrefix + " " + SString(_("%s of %s"), current.c_str(), total.c_str());
+    SString progress = m_titleProgressPrefix;
     m_window->SetText(progress.c_str());
     m_progressBar->SetProgress(static_cast<float>(static_cast<double>(downloadedSizeTotal) / m_downloadTotalSize));
 }
