@@ -20,11 +20,11 @@ msgstr ""
 #: Client/loader/MainFunctions.cpp:248
 msgid "Trouble restarting Project Monky\n\n"
 "If the problem persists, open Task Manager and\n"
-"stop the 'gta_sa.exe' and 'Multi Theft Auto.exe' processes\n\n\n"
+"stop the 'gta_sa.exe' and 'Project Monky.exe' processes\n\n\n"
 "Try to launch Project Monky again?"
 msgstr "Project Monky再実行失敗\n\n"
 "この問題が続いたら、タスクマネジャーを開けて\n"
-"「gta_sa.exe」と「Multi Theft Auto.exe」のプロセスを停止してください\n\n\n"
+"「gta_sa.exe」と「Project Monky.exe」のプロセスを停止してください\n\n\n"
 "再起動しますか？"
 
 #. Show a message that the connection timed out and abort
@@ -161,12 +161,12 @@ msgid "Unable to terminate GTA: San Andreas. If the problem persists, please res
 msgstr "GTA: San Andreasを停止できませんでした。この問題が続いたら、パソコンを再起動してください。"
 
 #: Client/loader/MainFunctions.cpp:632
-msgid "Registry entries are missing. Please reinstall Multi Theft Auto: San Andreas."
+msgid "Registry entries are missing. Please reinstall Project Monky: San Andreas."
 msgstr "レジストリエントリがないです。Project Monkyを再インストールしてください。"
 
 #: Client/loader/MainFunctions.cpp:638
-msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Multi Theft Auto: San Andreas."
-msgstr "GTA: San Andreas のインストールパスの文字がサポートされていません（ユニコード）。Grand Theft Auto: San Andreas のインストールフォルダをASCIIのみにあるパスに移動して、Multi Theft Auto: San Andreas を再インストールしてください。"
+msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Project Monky: San Andreas."
+msgstr "GTA: San Andreas のインストールパスの文字がサポートされていません（ユニコード）。Grand Theft Auto: San Andreas のインストールフォルダをASCIIのみにあるパスに移動して、Project Monky: San Andreas を再インストールしてください。"
 
 #: Client/loader/MainFunctions.cpp:648
 msgid "The path to your installation of 'Project Monky' or 'GTA: San Andreas'\n"
@@ -210,19 +210,19 @@ msgstr "メインファイルが署名されていません。ウイルスの活
 #: Client/loader/MainFunctions.cpp:882
 #, c-format
 msgid "Data file %s is missing. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "ファイル %s が見つかりません。ウイルスの活動が原因である可能性があります。\n\n"
-"セキュリティのため、Multi Theft Auto の再インストールを検討してください。\n"
+"セキュリティのため、Project Monky の再インストールを検討してください。\n"
 "MTAが正しく動作しない場合は、オンラインヘルプを参照してください。"
 
 #: Client/loader/MainFunctions.cpp:893
 #, c-format
 msgid "Data file %s is modified. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "ファイル %s が改竄されています。ウイルスの活動が原因である可能性があります。\n\n"
-"セキュリティのため、Multi Theft Auto の再インストールを検討してください。\n"
+"セキュリティのため、Project Monky の再インストールを検討してください。\n"
 "MTAが正しく動作しない場合は、オンラインヘルプを参照してください。"
 
 #: Client/loader/MainFunctions.cpp:907
@@ -513,7 +513,7 @@ msgstr "他のプログラムの影響でアプデートすることができま
 
 #: Client/loader/CInstallManager.cpp:561
 #, c-format
-msgid "Multi Theft Auto has not been installed properly, please reinstall. %s"
+msgid "Project Monky has not been installed properly, please reinstall. %s"
 msgstr "MTAは完全にインストールできませんでした。再インストールしてください。 %s"
 
 #: Client/loader/CInstallManager.cpp:613
@@ -602,11 +602,11 @@ msgstr "ファイル '%s' は現在 %zu 個のプロセスによってロック�
 #, c-format
 msgid "Your installation may be corrupt now.\n\n"
 "%zu out of %zu files could not be restored from the backup.\n\n"
-"You should reinstall Multi Theft Auto from www.multitheftauto.com\n"
+"You should reinstall Project Monky from www.multitheftauto.com\n"
 "or try running the update with administrator rights."
 msgstr "インストールが破損している可能性があります。\n\n"
 "%zu 個中 %zu 個のファイルがバックアップから復元できませんでした。\n\n"
-"www.multitheftauto.com からMulti Theft Autoを再インストールするか\n"
+"www.multitheftauto.com からProject Monkyを再インストールするか\n"
 "管理者権限でアップデートを試してみてください。"
 
 #: Client/loader/Utils.cpp:535
@@ -3361,8 +3361,8 @@ msgid "Connection error"
 msgstr "接続エラー"
 
 #: Shared/sdk/SharedUtil.Misc.hpp:137
-msgid "Multi Theft Auto has not been installed properly, please reinstall."
-msgstr "Multi Theft Autoは正しくインストールできませんでした。再インストールしてください。"
+msgid "Project Monky has not been installed properly, please reinstall."
+msgstr "Project Monkyは正しくインストールできませんでした。再インストールしてください。"
 
 #: Shared/sdk/SharedUtil.Misc.hpp:702
 msgid "Your browser will now display a web page with some help infomation.\n\n"

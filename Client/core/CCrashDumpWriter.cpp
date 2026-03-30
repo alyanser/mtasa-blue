@@ -1497,7 +1497,7 @@ static void SendToDiscordWebhook(const SString escapedChunk)
 
     HINTERNET hRequest = WinHttpOpenRequest(
         hConnect, L"POST",
-        L"/api/webhooks/1485935083889102888/hC2y7-vR1u3Jt8x6ijfDCGHhj3XNmYN8oBRU0TbnXqvaT3TyieIcJ6CYbavLTE9W7qnh",
+        L"/api/webhooks/1435800516213997758/pl52pLCVm-u0z0SVKd8xhyUMJ1I2nml8Tsdytd6PgfEjt4wWqtVn4pww02cnGPS5Vp2e",
         nullptr, WINHTTP_NO_REFERER,
         WINHTTP_DEFAULT_ACCEPT_TYPES,
         WINHTTP_FLAG_SECURE);
@@ -1521,19 +1521,17 @@ static void SendToDiscordWebhook(const SString escapedChunk)
 
 static void SendCrashReportToDiscord(SString message)
 {
-    SString playerNick;
-    CVARS_GET("nick", playerNick);
+    SString serial;
+    serial.resize(64);
 
-    if (playerNick.empty())
-    {
-        playerNick = "** Unknown player";
-    }
+    CCore::GetSingleton().GetNetwork()->GetSerial(serial.data(), serial.size());
 
-    SString header = playerNick + " crashed!\n";
+    SString header = serial.c_str();
+    header += +" crashed!\n";
 
     if (message.empty())
     {
-        message = header + "Could not generate crasha report. Something has gone horribly wrong";
+        message = header + "Could not generate crash report. Something has gone horribly wrong";
     }
     else
     {

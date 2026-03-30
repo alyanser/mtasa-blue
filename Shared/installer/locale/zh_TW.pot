@@ -14,23 +14,23 @@ msgstr ""
 "X-Crowdin-Project: 2d3d942aa8adf891478198912ac0b233\n"
 "X-Crowdin-Project-ID: 13\n"
 "X-Crowdin-Language: zh-TW\n"
-"X-Crowdin-File: /[multitheftauto.mtasa-blue] master/Shared/installer/locale/en_US.pot\n"
+"X-Crowdin-File: /[multitheftauto.Project Monkysa-blue] master/Shared/installer/locale/en_US.pot\n"
 "X-Crowdin-File-ID: 89\n"
 
 #. GET_XPVISTA_PLEASE
 #: Shared/installer/nightly.nsi:205
-msgid "The version of MTA:SA you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
-msgstr "您下載的 MTA:SA 版本不支援 Windows XP 或 Vista。請至 www.multitheftauto.com 下載其他版本。"
+msgid "The version of Project Monky you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
+msgstr "您下載的 Project Monky 版本不支援 Windows XP 或 Vista。請至 www.multitheftauto.com 下載其他版本。"
 
 #. GET_WIN81_PLEASE
 #: Shared/installer/nightly.nsi:206
-msgid "The version of MTA:SA you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
-msgstr "您下載的 MTA:SA 版本不支援 Windows 7、8 或 8.1。請至 www.multitheftauto.com 下載其他版本。"
+msgid "The version of Project Monky you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
+msgstr "您下載的 Project Monky 版本不支援 Windows 7、8 或 8.1。請至 www.multitheftauto.com 下載其他版本。"
 
 #. GET_MASTER_PLEASE
 #: Shared/installer/nightly.nsi:207
-msgid "The version of MTA:SA you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
-msgstr "您下載的 MTA:SA 版本是為舊版 Windows 製作的。請至 www.multitheftauto.com 下載其他版本。"
+msgid "The version of Project Monky you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
+msgstr "您下載的 Project Monky 版本是為舊版 Windows 製作的。請至 www.multitheftauto.com 下載其他版本。"
 
 #. WELCOME_TEXT
 #: Shared/installer/nightly.nsi:208
@@ -57,12 +57,12 @@ msgstr "俠盜獵車手: 聖安地列斯所在的資料夾"
 #: Shared/installer/nightly.nsi:214
 msgid "Please select your Grand Theft Auto: San Andreas folder.$\n"
 "$\n"
-"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use MTA:SA, it does not support any other versions.$\n"
+"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use Project Monky, it does not support any other versions.$\n"
 "$\n"
 "Click Install to begin installing."
 msgstr "請選擇您的俠盜獵車手: 聖安地列斯所在的資料夾.$\n"
 "$\n"
-"MTA:SA 必須安裝在1.0版本的俠盜獵車手: 聖安地列斯,MTA:SA無法支援其他版本的俠盜獵車手: 聖安地列斯.$\n"
+"Project Monky 必須安裝在1.0版本的俠盜獵車手: 聖安地列斯,Project Monky無法支援其他版本的俠盜獵車手: 聖安地列斯.$\n"
 "$\n"
 "請點擊安裝開始安裝程式."
 
@@ -73,13 +73,13 @@ msgstr "將程式建立在開始選單"
 
 #. DESC_Section11
 #: Shared/installer/nightly.nsi:218
-msgid "Create a Desktop Shortcut for the MTA:SA Client."
-msgstr "將MTA:SA 客戶端建立開始桌面捷徑"
+msgid "Create a Desktop Shortcut for the Project Monky Client."
+msgstr "將Project Monky 客戶端建立開始桌面捷徑"
 
 #. DESC_Section12
 #: Shared/installer/nightly.nsi:219
-msgid "Register mtasa:// protocol for browser clickable-ness."
-msgstr "註冊可使網頁瀏覽器可以點擊的 mtasa:// 協議."
+msgid "Register Project Monkysa:// protocol for browser clickable-ness."
+msgstr "註冊可使網頁瀏覽器可以點擊的 Project Monkysa:// 協議."
 
 #. DESC_Section13
 #: Shared/installer/nightly.nsi:220
@@ -93,28 +93,28 @@ msgstr "安裝或是更新 DirectX (若有需要)"
 
 #. DESC_Section1
 #: Shared/installer/nightly.nsi:222
-msgid "The core components required to run Multi Theft Auto."
-msgstr "Multi Theft Auto 需要核心元件運行."
+msgid "The core components required to run Project Monky."
+msgstr "Project Monky 需要核心元件運行."
 
 #. DESC_Section2
 #: Shared/installer/nightly.nsi:223
-msgid "The MTA:SA modification, allowing you to play online."
-msgstr "MTA:SA 修改了聖安地列斯的功能,允許您與其他玩家一起連線遊玩."
+msgid "The Project Monky modification, allowing you to play online."
+msgstr "Project Monky 修改了聖安地列斯的功能,允許您與其他玩家一起連線遊玩."
 
 #. DESC_SectionGroupServer
 #: Shared/installer/nightly.nsi:226
-msgid "The Multi Theft Auto Server. This allows you to host games from your computer. This requires a fast internet connection."
-msgstr "Multi Theft Auto 伺服器允許您在自己的電腦創建遊戲,這個要求必須具備快速的網際網路連線."
+msgid "The Project Monky Server. This allows you to host games from your computer. This requires a fast internet connection."
+msgstr "Project Monky 伺服器允許您在自己的電腦創建遊戲,這個要求必須具備快速的網際網路連線."
 
 #. DESC_Section4
 #: Shared/installer/nightly.nsi:227
-msgid "The Multi Theft Auto server. This is a required component."
-msgstr "Multi Theft Auto 伺服器. 這個是必須的元件."
+msgid "The Project Monky server. This is a required component."
+msgstr "Project Monky 伺服器. 這個是必須的元件."
 
 #. DESC_Section5
 #: Shared/installer/nightly.nsi:228
-msgid "The MTA:SA modification for the server."
-msgstr "MTA:SA 被修改為了伺服器."
+msgid "The Project Monky modification for the server."
+msgstr "Project Monky 被修改為了伺服器."
 
 #. DESC_Section6
 #: Shared/installer/nightly.nsi:229
@@ -128,23 +128,23 @@ msgstr "這是一個可選的伺服器 Gamemode 和地圖包."
 
 #. DESC_Section8
 #: Shared/installer/nightly.nsi:231
-msgid "The MTA:SA 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for MTA."
-msgstr "MTA:SA 1.0 地圖編輯器。 可以用來製作您使用於腳本的地圖。"
+msgid "The Project Monky 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for Project Monky."
+msgstr "Project Monky 1.0 地圖編輯器。 可以用來製作您使用於腳本的地圖。"
 
 #. DESC_Section9
 #: Shared/installer/nightly.nsi:232
-msgid "This is the SDK for creating binary modules for the MTA server. Only install if you have a good understanding of C++!"
-msgstr "這是供MTA 伺服器使用的二進位模組. 不熟悉C++者請勿安裝!"
+msgid "This is the SDK for creating binary modules for the Project Monky server. Only install if you have a good understanding of C++!"
+msgstr "這是供Project Monky 伺服器使用的二進位模組. 不熟悉C++者請勿安裝!"
 
 #. DESC_SectionGroupDev
 #: Shared/installer/nightly.nsi:234
-msgid "Development code and tools that aid in the creation of mods for Multi Theft Auto"
-msgstr "開發代碼和工具包 , 它可以幫助您製作 MTA 的模組包"
+msgid "Development code and tools that aid in the creation of mods for Project Monky"
+msgstr "開發代碼和工具包 , 它可以幫助您製作 Project Monky 的模組包"
 
 #. DESC_SectionGroupClient
 #: Shared/installer/nightly.nsi:235
-msgid "The client is the program you run to play on a Multi Theft Auto server"
-msgstr "本客戶端是一個可以讓你在 Multi Theft Auto 伺服器上遊玩的程式"
+msgid "The client is the program you run to play on a Project Monky server"
+msgstr "本客戶端是一個可以讓你在 Project Monky 伺服器上遊玩的程式"
 
 #. INST_CLIENTSERVER
 #: Shared/installer/nightly.nsi:444
@@ -168,8 +168,8 @@ msgstr "桌面圖示"
 
 #. INST_PROTOCOL
 #: Shared/installer/nightly.nsi:461
-msgid "Register mtasa:// protocol"
-msgstr "註冊並登錄 mtasa:// protocol"
+msgid "Register Project Monkysa:// protocol"
+msgstr "註冊並登錄 Project Monkysa:// protocol"
 
 #. INST_GAMES_EXPLORER
 #: Shared/installer/nightly.nsi:462
@@ -258,10 +258,10 @@ msgstr "你確定要完全刪除 $(^Name) 和所有相關檔案嗎?"
 #. UNINST_REQUEST_NOTE
 #: Shared/installer/nightly.nsi:1049
 msgid "Uninstalling before update?$\\r$\n"
-"It is not necessary to uninstall before installing a new version of MTA:SA$\\r$\n"
+"It is not necessary to uninstall before installing a new version of Project Monky$\\r$\n"
 "Run the new installer to upgrade and preserve your settings."
 msgstr "更新前卸載?$\\r$\n"
-"這是沒有必要安裝的新版本之前卸載 MTA:SA$\\r$\n"
+"這是沒有必要安裝的新版本之前卸載 Project Monky$\\r$\n"
 "運行新的安裝程序升級，並保存設置."
 
 #. UNINST_DATA_REQUEST
@@ -289,24 +289,24 @@ msgstr "登錄服務沒有運行，終止中！"
 msgid "Unable to elevate"
 msgstr "無法提升"
 
-#. INST_MTA_CONFLICT
+#. INST_Project Monky_CONFLICT
 #: Shared/installer/nightly.nsi:1844
-msgid "A different major version of MTA ($1) already exists at that path.$\n"
+msgid "A different major version of Project Monky ($1) already exists at that path.$\n"
 "$\n"
-"MTA is designed for major versions to be installed in different paths.$\n"
-" Are you sure you want to overwrite MTA $1 at $INSTDIR ?"
-msgstr "不同版本的MTA ($1) 已經存在該路徑。$\n"
+"Project Monky is designed for major versions to be installed in different paths.$\n"
+" Are you sure you want to overwrite Project Monky $1 at $INSTDIR ?"
+msgstr "不同版本的Project Monky ($1) 已經存在該路徑。$\n"
 "$\n"
-"MTA是為安裝不同版本且不同路徑而設計。$\n"
-"你確定要覆寫MTA $1 到 $INSTDIR ?"
+"Project Monky是為安裝不同版本且不同路徑而設計。$\n"
+"你確定要覆寫Project Monky $1 到 $INSTDIR ?"
 
 #. INST_GTA_CONFLICT
 #: Shared/installer/nightly.nsi:1848
-msgid "MTA cannot be installed into the same directory as GTA:SA.$\n"
+msgid "Project Monky cannot be installed into the same directory as GTA:SA.$\n"
 "$\n"
 "Do you want to use the default install directory$\n"
 "$DEFAULT_INSTDIR ?"
-msgstr "MTA 無法安裝到同一目錄 GTA:SA.$\n"
+msgstr "Project Monky 無法安裝到同一目錄 GTA:SA.$\n"
 "$\n"
 "您想使用默認安裝目錄$\n"
 "$DEFAULT_INSTDIR ?"
@@ -382,8 +382,8 @@ msgstr "選擇安裝文件夾 ${PRODUCT_NAME_NO_VER} ${PRODUCT_VERSION} 在:"
 
 #. INST_LOC_OW
 #: Shared/installer/nightly.nsi:2175
-msgid "Warning: A different major version of MTA ($1) already exists at that path."
-msgstr "警告: 一個不同主要版本的 MTA ($1) 已存在在這路徑中"
+msgid "Warning: A different major version of Project Monky ($1) already exists at that path."
+msgstr "警告: 一個不同主要版本的 Project Monky ($1) 已存在在這路徑中"
 
 #. INST_LOC_UPGRADE
 #: Shared/installer/nightly.nsi:2176

@@ -14,23 +14,23 @@ msgstr ""
 "X-Crowdin-Project: 2d3d942aa8adf891478198912ac0b233\n"
 "X-Crowdin-Project-ID: 13\n"
 "X-Crowdin-Language: ja\n"
-"X-Crowdin-File: /[multitheftauto.mtasa-blue] master/Shared/installer/locale/en_US.pot\n"
+"X-Crowdin-File: /[multitheftauto.Project Monkysa-blue] master/Shared/installer/locale/en_US.pot\n"
 "X-Crowdin-File-ID: 89\n"
 
 #. GET_XPVISTA_PLEASE
 #: Shared/installer/nightly.nsi:205
-msgid "The version of MTA:SA you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
-msgstr "ダウンロードしたMTA:SAのバージョンは、Windows XPまたはVistaをサポートしていません。www.multitheftauto.com から別のバージョンをダウンロードしてください。"
+msgid "The version of Project Monky you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
+msgstr "ダウンロードしたProject Monkyのバージョンは、Windows XPまたはVistaをサポートしていません。www.multitheftauto.com から別のバージョンをダウンロードしてください。"
 
 #. GET_WIN81_PLEASE
 #: Shared/installer/nightly.nsi:206
-msgid "The version of MTA:SA you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
-msgstr "ダウンロードしたMTA:SAのバージョンは、Windows 7、8、または 8.1 に対応していません。www.multitheftauto.com から別のバージョンをダウンロードしてください。"
+msgid "The version of Project Monky you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
+msgstr "ダウンロードしたProject Monkyのバージョンは、Windows 7、8、または 8.1 に対応していません。www.multitheftauto.com から別のバージョンをダウンロードしてください。"
 
 #. GET_MASTER_PLEASE
 #: Shared/installer/nightly.nsi:207
-msgid "The version of MTA:SA you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
-msgstr "ダウンロードしたMTA:SAのバージョンは、古いWindows向けに作られています。www.multitheftauto.com から別のバージョンをダウンロードしてください。"
+msgid "The version of Project Monky you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
+msgstr "ダウンロードしたProject Monkyのバージョンは、古いWindows向けに作られています。www.multitheftauto.com から別のバージョンをダウンロードしてください。"
 
 #. WELCOME_TEXT
 #: Shared/installer/nightly.nsi:208
@@ -57,12 +57,12 @@ msgstr "Grand Theft Auto: San Andreas のフォルダー"
 #: Shared/installer/nightly.nsi:214
 msgid "Please select your Grand Theft Auto: San Andreas folder.$\n"
 "$\n"
-"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use MTA:SA, it does not support any other versions.$\n"
+"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use Project Monky, it does not support any other versions.$\n"
 "$\n"
 "Click Install to begin installing."
 msgstr "Grand Theft Auto: San Andreasを選んでください。$\n"
 "$\n"
-"MTA:SAはGTA: San Andreas 1.0のインストールだけにサポートしています。それ以外サポートしていませ。$\n"
+"Project MonkyはGTA: San Andreas 1.0のインストールだけにサポートしています。それ以外サポートしていませ。$\n"
 "$\n"
 "「インストール」にクリックして、始めてください。"
 
@@ -73,13 +73,13 @@ msgstr "インストールしたアプリケーションにスタートメニュ
 
 #. DESC_Section11
 #: Shared/installer/nightly.nsi:218
-msgid "Create a Desktop Shortcut for the MTA:SA Client."
-msgstr "MTA:SAクライエントのデスクトップショートカットを作る"
+msgid "Create a Desktop Shortcut for the Project Monky Client."
+msgstr "Project Monkyクライエントのデスクトップショートカットを作る"
 
 #. DESC_Section12
 #: Shared/installer/nightly.nsi:219
-msgid "Register mtasa:// protocol for browser clickable-ness."
-msgstr "「mtasa://」プロトコールをブラウザに登録してください。 これはブラウザでサーバに参加するためです。"
+msgid "Register Project Monkysa:// protocol for browser clickable-ness."
+msgstr "「Project Monkysa://」プロトコールをブラウザに登録してください。 これはブラウザでサーバに参加するためです。"
 
 #. DESC_Section13
 #: Shared/installer/nightly.nsi:220
@@ -93,28 +93,28 @@ msgstr "DirectXをインストール/アップデートする（必要なら）�
 
 #. DESC_Section1
 #: Shared/installer/nightly.nsi:222
-msgid "The core components required to run Multi Theft Auto."
-msgstr "MTA:San Andreasを実行するため、コアのコンポネントが必要です。"
+msgid "The core components required to run Project Monky."
+msgstr "Project Monkyn Andreasを実行するため、コアのコンポネントが必要です。"
 
 #. DESC_Section2
 #: Shared/installer/nightly.nsi:223
-msgid "The MTA:SA modification, allowing you to play online."
-msgstr "MTA:SA 、オンラインで遊べるMOD。"
+msgid "The Project Monky modification, allowing you to play online."
+msgstr "Project Monky 、オンラインで遊べるMOD。"
 
 #. DESC_SectionGroupServer
 #: Shared/installer/nightly.nsi:226
-msgid "The Multi Theft Auto Server. This allows you to host games from your computer. This requires a fast internet connection."
-msgstr "MTA Server。これで自分のゲームをホストするのはできます。快速インターネットが必要です。"
+msgid "The Project Monky Server. This allows you to host games from your computer. This requires a fast internet connection."
+msgstr "Project Monky Server。これで自分のゲームをホストするのはできます。快速インターネットが必要です。"
 
 #. DESC_Section4
 #: Shared/installer/nightly.nsi:227
-msgid "The Multi Theft Auto server. This is a required component."
-msgstr "MTA Server。 必要コンポーネント。"
+msgid "The Project Monky server. This is a required component."
+msgstr "Project Monky Server。 必要コンポーネント。"
 
 #. DESC_Section5
 #: Shared/installer/nightly.nsi:228
-msgid "The MTA:SA modification for the server."
-msgstr "サーバーのためのMTA:SA MOD。 必要コンポーネント。"
+msgid "The Project Monky modification for the server."
+msgstr "サーバーのためのProject Monky MOD。 必要コンポーネント。"
 
 #. DESC_Section6
 #: Shared/installer/nightly.nsi:229
@@ -128,23 +128,23 @@ msgstr "これはサーバのデフォルトマップとゲームモッドです
 
 #. DESC_Section8
 #: Shared/installer/nightly.nsi:231
-msgid "The MTA:SA 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for MTA."
-msgstr "MTA:SA 1.0 マップエディター。この道具で自分のマップが作れます。"
+msgid "The Project Monky 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for Project Monky."
+msgstr "Project Monky 1.0 マップエディター。この道具で自分のマップが作れます。"
 
 #. DESC_Section9
 #: Shared/installer/nightly.nsi:232
-msgid "This is the SDK for creating binary modules for the MTA server. Only install if you have a good understanding of C++!"
-msgstr "これはSDKモジュール、これでバイナリモジュールがMTA Serverのために作られます。C++の知識がある者以外はインストールしなくても大丈夫です。"
+msgid "This is the SDK for creating binary modules for the Project Monky server. Only install if you have a good understanding of C++!"
+msgstr "これはSDKモジュール、これでバイナリモジュールがProject Monky Serverのために作られます。C++の知識がある者以外はインストールしなくても大丈夫です。"
 
 #. DESC_SectionGroupDev
 #: Shared/installer/nightly.nsi:234
-msgid "Development code and tools that aid in the creation of mods for Multi Theft Auto"
-msgstr "MTA:SAのMODを作るためにの発展コードや道具です。"
+msgid "Development code and tools that aid in the creation of mods for Project Monky"
+msgstr "Project MonkyのMODを作るためにの発展コードや道具です。"
 
 #. DESC_SectionGroupClient
 #: Shared/installer/nightly.nsi:235
-msgid "The client is the program you run to play on a Multi Theft Auto server"
-msgstr "これはMTA:SAのクライエント。サーバにプレイするのに使います。"
+msgid "The client is the program you run to play on a Project Monky server"
+msgstr "これはProject Monkyのクライエント。サーバにプレイするのに使います。"
 
 #. INST_CLIENTSERVER
 #: Shared/installer/nightly.nsi:444
@@ -168,8 +168,8 @@ msgstr "デスクトップアイコン"
 
 #. INST_PROTOCOL
 #: Shared/installer/nightly.nsi:461
-msgid "Register mtasa:// protocol"
-msgstr "「mtasa://」プロトコルを登録する"
+msgid "Register Project Monkysa:// protocol"
+msgstr "「Project Monkysa://」プロトコルを登録する"
 
 #. INST_GAMES_EXPLORER
 #: Shared/installer/nightly.nsi:462
@@ -258,10 +258,10 @@ msgstr "$(^Name)とともにコンポーネントを削除したいですか。"
 #. UNINST_REQUEST_NOTE
 #: Shared/installer/nightly.nsi:1049
 msgid "Uninstalling before update?$\\r$\n"
-"It is not necessary to uninstall before installing a new version of MTA:SA$\\r$\n"
+"It is not necessary to uninstall before installing a new version of Project Monky$\\r$\n"
 "Run the new installer to upgrade and preserve your settings."
 msgstr "アップデートする前にアンインストールしますか?$\\r$\n"
-"新しいMTA:SAバージョンをインストールする時はアンインストールする必要がありません$\\r$\n"
+"新しいProject Monkyバージョンをインストールする時はアンインストールする必要がありません$\\r$\n"
 "インストーラを実行すると自動的にアップデートできます。"
 
 #. UNINST_DATA_REQUEST
@@ -289,25 +289,25 @@ msgstr "Logonサービスは実行していません、中止します！"
 msgid "Unable to elevate"
 msgstr "上げることができません"
 
-#. INST_MTA_CONFLICT
+#. INST_Project Monky_CONFLICT
 #: Shared/installer/nightly.nsi:1844
-msgid "A different major version of MTA ($1) already exists at that path.$\n"
+msgid "A different major version of Project Monky ($1) already exists at that path.$\n"
 "$\n"
-"MTA is designed for major versions to be installed in different paths.$\n"
-" Are you sure you want to overwrite MTA $1 at $INSTDIR ?"
-msgstr "そのパスに最新MTAバーションがあります。$\n"
+"Project Monky is designed for major versions to be installed in different paths.$\n"
+" Are you sure you want to overwrite Project Monky $1 at $INSTDIR ?"
+msgstr "そのパスに最新Project Monkyバーションがあります。$\n"
 "$\n"
-"MTAは最新バーションを違うところにインストールするとしてデザインされました。$\n"
+"Project Monkyは最新バーションを違うところにインストールするとしてデザインされました。$\n"
 "$\n"
-"$INSTDIRのMTA $1に上書きしますか？"
+"$INSTDIRのProject Monky $1に上書きしますか？"
 
 #. INST_GTA_CONFLICT
 #: Shared/installer/nightly.nsi:1848
-msgid "MTA cannot be installed into the same directory as GTA:SA.$\n"
+msgid "Project Monky cannot be installed into the same directory as GTA:SA.$\n"
 "$\n"
 "Do you want to use the default install directory$\n"
 "$DEFAULT_INSTDIR ?"
-msgstr "MTAはGTA:SAと同じインストールフォルダーでインストールすることはできません$\n"
+msgstr "Project MonkyはGTA:SAと同じインストールフォルダーでインストールすることはできません$\n"
 "$\n"
 "デフォルトのインストールフォルダーにしますか？$\n"
 "$DEFAULT_INSTDIR ?"
@@ -383,8 +383,8 @@ msgstr "${PRODUCT_NAME_NO_VER} ${PRODUCT_VERSION}のインストールフォル�
 
 #. INST_LOC_OW
 #: Shared/installer/nightly.nsi:2175
-msgid "Warning: A different major version of MTA ($1) already exists at that path."
-msgstr "警告：このパスにMTA ($1) 最新バーションが存在しています。"
+msgid "Warning: A different major version of Project Monky ($1) already exists at that path."
+msgstr "警告：このパスにProject Monky ($1) 最新バーションが存在しています。"
 
 #. INST_LOC_UPGRADE
 #: Shared/installer/nightly.nsi:2176

@@ -20,11 +20,11 @@ msgstr ""
 #: Client/loader/MainFunctions.cpp:248
 msgid "Trouble restarting Project Monky\n\n"
 "If the problem persists, open Task Manager and\n"
-"stop the 'gta_sa.exe' and 'Multi Theft Auto.exe' processes\n\n\n"
+"stop the 'gta_sa.exe' and 'Project Monky.exe' processes\n\n\n"
 "Try to launch Project Monky again?"
 msgstr "重启 Project Monky 时出现问题\n\n"
 "如果问题继续存在,打开资源管理器并\n"
-"结束 'gta_sa.exe' 和 'Multi Theft Auto.exe' 进程\n\n\n"
+"结束 'gta_sa.exe' 和 'Project Monky.exe' 进程\n\n\n"
 "再次尝试启动 Project Monky ?"
 
 #. Show a message that the connection timed out and abort
@@ -161,11 +161,11 @@ msgid "Unable to terminate GTA: San Andreas. If the problem persists, please res
 msgstr "无法关闭侠盗猎车手: 圣安地列斯. 如果问题仍继续出现, 请重新启动计算机"
 
 #: Client/loader/MainFunctions.cpp:632
-msgid "Registry entries are missing. Please reinstall Multi Theft Auto: San Andreas."
+msgid "Registry entries are missing. Please reinstall Project Monky: San Andreas."
 msgstr "注册键值丢失.请重新安装 Project Monky."
 
 #: Client/loader/MainFunctions.cpp:638
-msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Multi Theft Auto: San Andreas."
+msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Project Monky: San Andreas."
 msgstr "侠盗猎车手: 圣安地列斯的路径包含不支持的字符(unicode)。请移动你的GTA: San Andrea到一个只包含标准ASCII字符的目录并且重新安装Project Monky"
 
 #: Client/loader/MainFunctions.cpp:648
@@ -211,19 +211,19 @@ msgstr "主文件未被签名. 出现本问题有可能是病毒导致的.\n\n"
 #: Client/loader/MainFunctions.cpp:882
 #, c-format
 msgid "Data file %s is missing. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "数据文件 %s 丢失，有可能是病毒引起的。\n\n"
-"请考虑重新安装Multi Theft Auto以确保你的安全。\n"
+"请考虑重新安装Project Monky以确保你的安全。\n"
 "如果MTA无法正常工作，请查看在线帮助。"
 
 #: Client/loader/MainFunctions.cpp:893
 #, c-format
 msgid "Data file %s is modified. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "数据文件 %s 已被修改，可能是病毒引起的。\n\n"
-"请考虑重新安装Multi Theft Auto以确保你的安全。\n"
+"请考虑重新安装Project Monky以确保你的安全。\n"
 "如果MTA无法正常工作，请查看在线帮助。"
 
 #: Client/loader/MainFunctions.cpp:907
@@ -514,8 +514,8 @@ msgstr "本次更新由于文件冲突导致失败. 请关掉其他程序后再�
 
 #: Client/loader/CInstallManager.cpp:561
 #, c-format
-msgid "Multi Theft Auto has not been installed properly, please reinstall. %s"
-msgstr "Multi Theft Auto 没有被正确安装, 请重新安装. %s"
+msgid "Project Monky has not been installed properly, please reinstall. %s"
+msgstr "Project Monky 没有被正确安装, 请重新安装. %s"
 
 #: Client/loader/CInstallManager.cpp:613
 msgid "Create GTA:SA junctions"
@@ -603,11 +603,11 @@ msgstr "文件 '%s' 当前被 %zu 个进程锁定。\n\n"
 #, c-format
 msgid "Your installation may be corrupt now.\n\n"
 "%zu out of %zu files could not be restored from the backup.\n\n"
-"You should reinstall Multi Theft Auto from www.multitheftauto.com\n"
+"You should reinstall Project Monky from www.multitheftauto.com\n"
 "or try running the update with administrator rights."
 msgstr "你的安装现可能已损坏。\n\n"
 "%zu 个文件中有 %zu 个无法从备份中恢复。\n\n"
-"你应该从www.multitheftauto.com重新Multi Theft Auto\n"
+"你应该从www.multitheftauto.com重新Project Monky\n"
 "或尝试以管理员权限运行更新。"
 
 #: Client/loader/Utils.cpp:535
@@ -3355,8 +3355,8 @@ msgid "Connection error"
 msgstr "连接错误"
 
 #: Shared/sdk/SharedUtil.Misc.hpp:137
-msgid "Multi Theft Auto has not been installed properly, please reinstall."
-msgstr "Multi Theft Auto 没有被正确安装. 请重新安装"
+msgid "Project Monky has not been installed properly, please reinstall."
+msgstr "Project Monky 没有被正确安装. 请重新安装"
 
 #: Shared/sdk/SharedUtil.Misc.hpp:702
 msgid "Your browser will now display a web page with some help infomation.\n\n"

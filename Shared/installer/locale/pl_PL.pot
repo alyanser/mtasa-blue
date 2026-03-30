@@ -14,23 +14,23 @@ msgstr ""
 "X-Crowdin-Project: 2d3d942aa8adf891478198912ac0b233\n"
 "X-Crowdin-Project-ID: 13\n"
 "X-Crowdin-Language: pl\n"
-"X-Crowdin-File: /[multitheftauto.mtasa-blue] master/Shared/installer/locale/en_US.pot\n"
+"X-Crowdin-File: /[multitheftauto.Project Monkysa-blue] master/Shared/installer/locale/en_US.pot\n"
 "X-Crowdin-File-ID: 89\n"
 
 #. GET_XPVISTA_PLEASE
 #: Shared/installer/nightly.nsi:205
-msgid "The version of MTA:SA you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
-msgstr "Ta wersja MTA:SA nie obsługuje systemów Windows XP i Vista. Pobierz inną wersję ze strony www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
+msgstr "Ta wersja Project Monky nie obsługuje systemów Windows XP i Vista. Pobierz inną wersję ze strony www.multitheftauto.com."
 
 #. GET_WIN81_PLEASE
 #: Shared/installer/nightly.nsi:206
-msgid "The version of MTA:SA you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
-msgstr "Ta wersja MTA:SA nie obsługuje systemów Windows 7, Windows 8 i 8.1.  Pobierz inną wersję ze strony www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
+msgstr "Ta wersja Project Monky nie obsługuje systemów Windows 7, Windows 8 i 8.1.  Pobierz inną wersję ze strony www.multitheftauto.com."
 
 #. GET_MASTER_PLEASE
 #: Shared/installer/nightly.nsi:207
-msgid "The version of MTA:SA you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
-msgstr "Ta wersja MTA:SA jest przeznaczona do starszych wersji systemu Windows.  Pobierz inną wersję ze strony www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
+msgstr "Ta wersja Project Monky jest przeznaczona do starszych wersji systemu Windows.  Pobierz inną wersję ze strony www.multitheftauto.com."
 
 #. WELCOME_TEXT
 #: Shared/installer/nightly.nsi:208
@@ -57,12 +57,12 @@ msgstr "Folder zawierający grę Grand Theft Auto: San Andreas"
 #: Shared/installer/nightly.nsi:214
 msgid "Please select your Grand Theft Auto: San Andreas folder.$\n"
 "$\n"
-"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use MTA:SA, it does not support any other versions.$\n"
+"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use Project Monky, it does not support any other versions.$\n"
 "$\n"
 "Click Install to begin installing."
 msgstr "Wskaż folder, w którym zainstalowano grę Grand Theft Auto: San Andreas.$\n"
 "$\n"
-"MTA:SA WYMAGA gry GTA:SA w wersji 1.0, aczkolwiek jeśli posiadasz inną wersję, instalator spróbuje ją przystosować do działania z modyfikacją.$\n"
+"Project Monky WYMAGA gry GTA:SA w wersji 1.0, aczkolwiek jeśli posiadasz inną wersję, instalator spróbuje ją przystosować do działania z modyfikacją.$\n"
 "$\n"
 "Kliknij przycisk Zainstaluj aby rozpocząć instalację."
 
@@ -73,13 +73,13 @@ msgstr "Tworzy grupę dla instalowanej aplikacji w Menu Start"
 
 #. DESC_Section11
 #: Shared/installer/nightly.nsi:218
-msgid "Create a Desktop Shortcut for the MTA:SA Client."
-msgstr "Umieszcza skrót do Klienta MTA:SA na Pulpicie."
+msgid "Create a Desktop Shortcut for the Project Monky Client."
+msgstr "Umieszcza skrót do Klienta Project Monky na Pulpicie."
 
 #. DESC_Section12
 #: Shared/installer/nightly.nsi:219
-msgid "Register mtasa:// protocol for browser clickable-ness."
-msgstr "Rejestruje obsługę protokołu mtasa:// aby umożliwić szybkie podłączanie się do serwerów MTA poprzez linki w przeglądarce."
+msgid "Register Project Monkysa:// protocol for browser clickable-ness."
+msgstr "Rejestruje obsługę protokołu Project Monkysa:// aby umożliwić szybkie podłączanie się do serwerów Project Monky poprzez linki w przeglądarce."
 
 #. DESC_Section13
 #: Shared/installer/nightly.nsi:220
@@ -93,28 +93,28 @@ msgstr "Zainstaluj lub zaktualizuj DirectX (jeśli jest wymagany)."
 
 #. DESC_Section1
 #: Shared/installer/nightly.nsi:222
-msgid "The core components required to run Multi Theft Auto."
-msgstr "Podstawowe komponenty wymagane do uruchomienia Multi Theft Auto."
+msgid "The core components required to run Project Monky."
+msgstr "Podstawowe komponenty wymagane do uruchomienia Project Monky."
 
 #. DESC_Section2
 #: Shared/installer/nightly.nsi:223
-msgid "The MTA:SA modification, allowing you to play online."
-msgstr "Modyfikacja MTA:SA pozwala Ci grać online."
+msgid "The Project Monky modification, allowing you to play online."
+msgstr "Modyfikacja Project Monky pozwala Ci grać online."
 
 #. DESC_SectionGroupServer
 #: Shared/installer/nightly.nsi:226
-msgid "The Multi Theft Auto Server. This allows you to host games from your computer. This requires a fast internet connection."
-msgstr "Serwer Multi Theft Auto. Pozwala na uruchomienie serwera do gry na Twoim komputerze. Wymaga szybkiego połączenia z internetem."
+msgid "The Project Monky Server. This allows you to host games from your computer. This requires a fast internet connection."
+msgstr "Serwer Project Monky. Pozwala na uruchomienie serwera do gry na Twoim komputerze. Wymaga szybkiego połączenia z internetem."
 
 #. DESC_Section4
 #: Shared/installer/nightly.nsi:227
-msgid "The Multi Theft Auto server. This is a required component."
-msgstr "Serwer Multi Theft Auto. Ten komponent jest wymagany."
+msgid "The Project Monky server. This is a required component."
+msgstr "Serwer Project Monky. Ten komponent jest wymagany."
 
 #. DESC_Section5
 #: Shared/installer/nightly.nsi:228
-msgid "The MTA:SA modification for the server."
-msgstr "Modyfikacja MTA:SA dla serwera."
+msgid "The Project Monky modification for the server."
+msgstr "Modyfikacja Project Monky dla serwera."
 
 #. DESC_Section6
 #: Shared/installer/nightly.nsi:229
@@ -128,23 +128,23 @@ msgstr "Opcjonalny zestaw zasobów, zawierający standardowe tryby gry i mapy dl
 
 #. DESC_Section8
 #: Shared/installer/nightly.nsi:231
-msgid "The MTA:SA 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for MTA."
-msgstr "Edytor Map dla MTA:SA.  Można go użyć do tworzenia lub edycji map dla rozmaitych trybów gry w MTA."
+msgid "The Project Monky 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for Project Monky."
+msgstr "Edytor Map dla Project Monky.  Można go użyć do tworzenia lub edycji map dla rozmaitych trybów gry w Project Monky."
 
 #. DESC_Section9
 #: Shared/installer/nightly.nsi:232
-msgid "This is the SDK for creating binary modules for the MTA server. Only install if you have a good understanding of C++!"
-msgstr "Zestaw SDK do tworzenia modułów dla serwera MTA. Zainstaluj go tylko wtedy, gdy dobrze znasz język C++!"
+msgid "This is the SDK for creating binary modules for the Project Monky server. Only install if you have a good understanding of C++!"
+msgstr "Zestaw SDK do tworzenia modułów dla serwera Project Monky. Zainstaluj go tylko wtedy, gdy dobrze znasz język C++!"
 
 #. DESC_SectionGroupDev
 #: Shared/installer/nightly.nsi:234
-msgid "Development code and tools that aid in the creation of mods for Multi Theft Auto"
-msgstr "Pomocniczy kod oraz narzędzia pomagające w tworzeniu modyfikacji do Multi Theft Auto"
+msgid "Development code and tools that aid in the creation of mods for Project Monky"
+msgstr "Pomocniczy kod oraz narzędzia pomagające w tworzeniu modyfikacji do Project Monky"
 
 #. DESC_SectionGroupClient
 #: Shared/installer/nightly.nsi:235
-msgid "The client is the program you run to play on a Multi Theft Auto server"
-msgstr "Klient jest programem, który służy do gry w Multi Theft Auto"
+msgid "The client is the program you run to play on a Project Monky server"
+msgstr "Klient jest programem, który służy do gry w Project Monky"
 
 #. INST_CLIENTSERVER
 #: Shared/installer/nightly.nsi:444
@@ -168,8 +168,8 @@ msgstr "Utwórz skrót na Pulpicie"
 
 #. INST_PROTOCOL
 #: Shared/installer/nightly.nsi:461
-msgid "Register mtasa:// protocol"
-msgstr "Zarejestruj protokół mtasa://"
+msgid "Register Project Monkysa:// protocol"
+msgstr "Zarejestruj protokół Project Monkysa://"
 
 #. INST_GAMES_EXPLORER
 #: Shared/installer/nightly.nsi:462
@@ -258,10 +258,10 @@ msgstr "Czy na pewno chcesz usunąć $(^Name) i wszystkie jego składniki?"
 #. UNINST_REQUEST_NOTE
 #: Shared/installer/nightly.nsi:1049
 msgid "Uninstalling before update?$\\r$\n"
-"It is not necessary to uninstall before installing a new version of MTA:SA$\\r$\n"
+"It is not necessary to uninstall before installing a new version of Project Monky$\\r$\n"
 "Run the new installer to upgrade and preserve your settings."
 msgstr "Czy próbujesz odinstalować moda przed jego aktualizacją?$\\r$\n"
-"Nie ma potrzeby odinstalowywania MTA:SA przed instalacją nowej wersji$\\r$\n"
+"Nie ma potrzeby odinstalowywania Project Monky przed instalacją nowej wersji$\\r$\n"
 "Wystarczy uruchomić instalator nowej wersji moda, żeby dokonać uaktualnienia i zachować swoje ustawienia."
 
 #. UNINST_DATA_REQUEST
@@ -289,24 +289,24 @@ msgstr "Usługa Logon nie jest włączona, anulowanie instalacji!"
 msgid "Unable to elevate"
 msgstr "Nie udało się uzyskać praw administratora."
 
-#. INST_MTA_CONFLICT
+#. INST_Project Monky_CONFLICT
 #: Shared/installer/nightly.nsi:1844
-msgid "A different major version of MTA ($1) already exists at that path.$\n"
+msgid "A different major version of Project Monky ($1) already exists at that path.$\n"
 "$\n"
-"MTA is designed for major versions to be installed in different paths.$\n"
-" Are you sure you want to overwrite MTA $1 at $INSTDIR ?"
-msgstr "We wskazanym folderze zainstalowano już inną wersję główną MTA ($1).$\n"
+"Project Monky is designed for major versions to be installed in different paths.$\n"
+" Are you sure you want to overwrite Project Monky $1 at $INSTDIR ?"
+msgstr "We wskazanym folderze zainstalowano już inną wersję główną Project Monky ($1).$\n"
 "$\n"
-"MTA działa prawidłowo tylko wtedy, gdy różne wersje główne moda znajdują się w osobnych folderach.$\n"
-"Czy jesteś pewien, że chcesz nadpisać MTA $1 w folderze $INSTDIR ?"
+"Project Monky działa prawidłowo tylko wtedy, gdy różne wersje główne moda znajdują się w osobnych folderach.$\n"
+"Czy jesteś pewien, że chcesz nadpisać Project Monky $1 w folderze $INSTDIR ?"
 
 #. INST_GTA_CONFLICT
 #: Shared/installer/nightly.nsi:1848
-msgid "MTA cannot be installed into the same directory as GTA:SA.$\n"
+msgid "Project Monky cannot be installed into the same directory as GTA:SA.$\n"
 "$\n"
 "Do you want to use the default install directory$\n"
 "$DEFAULT_INSTDIR ?"
-msgstr "MTA nie może być zainstalowane w tym samym folderze co GTA:SA.$\n"
+msgstr "Project Monky nie może być zainstalowane w tym samym folderze co GTA:SA.$\n"
 "$\n"
 "Czy chcesz użyć domyślnego folderu instalacji$\n"
 "$DEFAULT_INSTDIR ?"
@@ -382,8 +382,8 @@ msgstr "Wybierz folder, gdzie ${PRODUCT_NAME_NO_VER} ${PRODUCT_VERSION} ma zosta
 
 #. INST_LOC_OW
 #: Shared/installer/nightly.nsi:2175
-msgid "Warning: A different major version of MTA ($1) already exists at that path."
-msgstr "Uwaga: W wybranym folderze znajduje się już inna główna wersja MTA ($1)."
+msgid "Warning: A different major version of Project Monky ($1) already exists at that path."
+msgstr "Uwaga: W wybranym folderze znajduje się już inna główna wersja Project Monky ($1)."
 
 #. INST_LOC_UPGRADE
 #: Shared/installer/nightly.nsi:2176

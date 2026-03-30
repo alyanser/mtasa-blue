@@ -20,11 +20,11 @@ msgstr ""
 #: Client/loader/MainFunctions.cpp:248
 msgid "Trouble restarting Project Monky\n\n"
 "If the problem persists, open Task Manager and\n"
-"stop the 'gta_sa.exe' and 'Multi Theft Auto.exe' processes\n\n\n"
+"stop the 'gta_sa.exe' and 'Project Monky.exe' processes\n\n\n"
 "Try to launch Project Monky again?"
 msgstr "Difficulté de redémarrage de Project Monky:\n\n"
 "Si le problème persiste, ouvrez le Gestionnaire des tâches et\n"
-"arrêtez les processus 'gta_sa.exe' et 'Multi Theft Auto.exe'.\n\n\n"
+"arrêtez les processus 'gta_sa.exe' et 'Project Monky.exe'.\n\n\n"
 "Voulez-vous tenter de relancer Project Monky?"
 
 #. Show a message that the connection timed out and abort
@@ -161,12 +161,12 @@ msgid "Unable to terminate GTA: San Andreas. If the problem persists, please res
 msgstr "Impossible de terminer GTA: San Andreas. Si le problème persiste, veuillez redémarrer votre ordinateur."
 
 #: Client/loader/MainFunctions.cpp:632
-msgid "Registry entries are missing. Please reinstall Multi Theft Auto: San Andreas."
-msgstr "Certaines clés du Registre sont manquantes. Veuillez réinstaller Multi Theft Auto: San Andreas."
+msgid "Registry entries are missing. Please reinstall Project Monky: San Andreas."
+msgstr "Certaines clés du Registre sont manquantes. Veuillez réinstaller Project Monky: San Andreas."
 
 #: Client/loader/MainFunctions.cpp:638
-msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Multi Theft Auto: San Andreas."
-msgstr "L'emplacement d'installation de GTA: San Andreas contient des caractères non supportés (Unicode). Veuillez déplacer les fichiers de GTA: San Andreas à un emplacement contenant uniquement des caractères standards (ASCII) et réinstaller Multi Theft Auto: San Andreas"
+msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Project Monky: San Andreas."
+msgstr "L'emplacement d'installation de GTA: San Andreas contient des caractères non supportés (Unicode). Veuillez déplacer les fichiers de GTA: San Andreas à un emplacement contenant uniquement des caractères standards (ASCII) et réinstaller Project Monky: San Andreas"
 
 #: Client/loader/MainFunctions.cpp:648
 msgid "The path to your installation of 'Project Monky' or 'GTA: San Andreas'\n"
@@ -211,19 +211,19 @@ msgstr "Le fichier principal n'est pas signé, et pourrait être infecté.\n\n"
 #: Client/loader/MainFunctions.cpp:882
 #, c-format
 msgid "Data file %s is missing. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "Le fichier %s est manquant. Activité d'un virus possible.\n\n"
-"Envisagez de réinstaller Multi Theft Auto pour votre sécurité.\n"
+"Envisagez de réinstaller Project Monky pour votre sécurité.\n"
 "Consultez l'aide en ligne si MTA ne fonctionne pas correctement."
 
 #: Client/loader/MainFunctions.cpp:893
 #, c-format
 msgid "Data file %s is modified. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "Le fichier %s est modifié. Activité d'un virus possible.\n\n"
-"Envisagez de réinstaller Multi Theft Auto pour votre sécurité.\n"
+"Envisagez de réinstaller Project Monky pour votre sécurité.\n"
 "Consultez l'aide en ligne si MTA ne fonctionne pas correctement."
 
 #: Client/loader/MainFunctions.cpp:907
@@ -514,8 +514,8 @@ msgstr "Impossible de mettre à jour à cause de conflits de fichier. Veuillez f
 
 #: Client/loader/CInstallManager.cpp:561
 #, c-format
-msgid "Multi Theft Auto has not been installed properly, please reinstall. %s"
-msgstr "Multi Theft Auto n'a pas été installé correctement. Veuillez réinstaller. %s"
+msgid "Project Monky has not been installed properly, please reinstall. %s"
+msgstr "Project Monky n'a pas été installé correctement. Veuillez réinstaller. %s"
 
 #: Client/loader/CInstallManager.cpp:613
 msgid "Create GTA:SA junctions"
@@ -603,11 +603,11 @@ msgstr "Le fichier '%s' est actuellement verrouillé par %zu processus.\n\n"
 #, c-format
 msgid "Your installation may be corrupt now.\n\n"
 "%zu out of %zu files could not be restored from the backup.\n\n"
-"You should reinstall Multi Theft Auto from www.multitheftauto.com\n"
+"You should reinstall Project Monky from www.multitheftauto.com\n"
 "or try running the update with administrator rights."
 msgstr "Votre installation est peut-être corrompue.\n\n"
 "%zu sur %zu fichiers n'ont pas pu être restaurés à partir de la sauvegarde.\n\n"
-"Vous devriez réinstaller Multi Theft Auto depuis www.multitheftauto.com\n"
+"Vous devriez réinstaller Project Monky depuis www.multitheftauto.com\n"
 "ou essayez d'exécuter la mise à jour avec les droits d'administrateur."
 
 #: Client/loader/Utils.cpp:535
@@ -3367,8 +3367,8 @@ msgid "Connection error"
 msgstr "Erreur de connexion"
 
 #: Shared/sdk/SharedUtil.Misc.hpp:137
-msgid "Multi Theft Auto has not been installed properly, please reinstall."
-msgstr "Multi Theft Auto n'a pas été installé correctement. Veuillez réinstaller."
+msgid "Project Monky has not been installed properly, please reinstall."
+msgstr "Project Monky n'a pas été installé correctement. Veuillez réinstaller."
 
 #: Shared/sdk/SharedUtil.Misc.hpp:702
 msgid "Your browser will now display a web page with some help infomation.\n\n"

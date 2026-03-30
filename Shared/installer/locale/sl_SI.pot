@@ -14,22 +14,22 @@ msgstr ""
 "X-Crowdin-Project: 2d3d942aa8adf891478198912ac0b233\n"
 "X-Crowdin-Project-ID: 13\n"
 "X-Crowdin-Language: sl\n"
-"X-Crowdin-File: /[multitheftauto.mtasa-blue] master/Shared/installer/locale/en_US.pot\n"
+"X-Crowdin-File: /[multitheftauto.Project Monkysa-blue] master/Shared/installer/locale/en_US.pot\n"
 "X-Crowdin-File-ID: 89\n"
 
 #. GET_XPVISTA_PLEASE
 #: Shared/installer/nightly.nsi:205
-msgid "The version of MTA:SA you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
 msgstr ""
 
 #. GET_WIN81_PLEASE
 #: Shared/installer/nightly.nsi:206
-msgid "The version of MTA:SA you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
 msgstr ""
 
 #. GET_MASTER_PLEASE
 #: Shared/installer/nightly.nsi:207
-msgid "The version of MTA:SA you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
 msgstr ""
 
 #. WELCOME_TEXT
@@ -57,12 +57,12 @@ msgstr "Grand Theft Auto: San Andreas mapa"
 #: Shared/installer/nightly.nsi:214
 msgid "Please select your Grand Theft Auto: San Andreas folder.$\n"
 "$\n"
-"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use MTA:SA, it does not support any other versions.$\n"
+"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use Project Monky, it does not support any other versions.$\n"
 "$\n"
 "Click Install to begin installing."
 msgstr "Prosimo izberite mapo, kjer je nameščen Grand Theft Auto: San Andreas.$\n"
 "$\n"
-"Nameščen mora biti Grand Theft Auto: San Andreas različica 1.0, MTA:SA ne podpira drugih različic.$\n"
+"Nameščen mora biti Grand Theft Auto: San Andreas različica 1.0, Project Monky ne podpira drugih različic.$\n"
 "$\n"
 "Kliknite Namestitev za začetek nameščanja."
 
@@ -73,13 +73,13 @@ msgstr "Ustvari skupino na Start meniju za nameščene aplikacije"
 
 #. DESC_Section11
 #: Shared/installer/nightly.nsi:218
-msgid "Create a Desktop Shortcut for the MTA:SA Client."
-msgstr "Ustvari namizno bližnjico za MTA:SA Klient."
+msgid "Create a Desktop Shortcut for the Project Monky Client."
+msgstr "Ustvari namizno bližnjico za Project Monky Klient."
 
 #. DESC_Section12
 #: Shared/installer/nightly.nsi:219
-msgid "Register mtasa:// protocol for browser clickable-ness."
-msgstr "Registrirajte mtasa:// protokol za klikanje po brskalniku."
+msgid "Register Project Monkysa:// protocol for browser clickable-ness."
+msgstr "Registrirajte Project Monkysa:// protokol za klikanje po brskalniku."
 
 #. DESC_Section13
 #: Shared/installer/nightly.nsi:220
@@ -93,28 +93,28 @@ msgstr ""
 
 #. DESC_Section1
 #: Shared/installer/nightly.nsi:222
-msgid "The core components required to run Multi Theft Auto."
-msgstr "Glavne komponente, ki so potrebne za zagon Multi Theft Auto."
+msgid "The core components required to run Project Monky."
+msgstr "Glavne komponente, ki so potrebne za zagon Project Monky."
 
 #. DESC_Section2
 #: Shared/installer/nightly.nsi:223
-msgid "The MTA:SA modification, allowing you to play online."
-msgstr "MTA:SA modifikacija ti dovoljuje, da igraš preko interneta."
+msgid "The Project Monky modification, allowing you to play online."
+msgstr "Project Monky modifikacija ti dovoljuje, da igraš preko interneta."
 
 #. DESC_SectionGroupServer
 #: Shared/installer/nightly.nsi:226
-msgid "The Multi Theft Auto Server. This allows you to host games from your computer. This requires a fast internet connection."
-msgstr "Multi Theft Auto Strežnik. To ti dovoljuje, da preko svojega računalnika gostuješ igre. Potrebna je hitra internetna povezava."
+msgid "The Project Monky Server. This allows you to host games from your computer. This requires a fast internet connection."
+msgstr "Project Monky Strežnik. To ti dovoljuje, da preko svojega računalnika gostuješ igre. Potrebna je hitra internetna povezava."
 
 #. DESC_Section4
 #: Shared/installer/nightly.nsi:227
-msgid "The Multi Theft Auto server. This is a required component."
-msgstr "Multi Theft Auto strežnik. To je potrebna komponenta."
+msgid "The Project Monky server. This is a required component."
+msgstr "Project Monky strežnik. To je potrebna komponenta."
 
 #. DESC_Section5
 #: Shared/installer/nightly.nsi:228
-msgid "The MTA:SA modification for the server."
-msgstr "MTA:SA modifikacija za strežnik."
+msgid "The Project Monky modification for the server."
+msgstr "Project Monky modifikacija za strežnik."
 
 #. DESC_Section6
 #: Shared/installer/nightly.nsi:229
@@ -128,23 +128,23 @@ msgstr "To je neobvezen niz načinov igranja in map za vaš strežnik."
 
 #. DESC_Section8
 #: Shared/installer/nightly.nsi:231
-msgid "The MTA:SA 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for MTA."
-msgstr "MTA:SA 1.0 Urejevalnik map. To se uporablja za ustvarjanje lastnih map za različne igralske načine v MTA."
+msgid "The Project Monky 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for Project Monky."
+msgstr "Project Monky 1.0 Urejevalnik map. To se uporablja za ustvarjanje lastnih map za različne igralske načine v Project Monky."
 
 #. DESC_Section9
 #: Shared/installer/nightly.nsi:232
-msgid "This is the SDK for creating binary modules for the MTA server. Only install if you have a good understanding of C++!"
-msgstr "To je SDK za ustvarjanje binarnih modulov za MTA strežnik. Namestite samo, če dobro razumete jezik C++!"
+msgid "This is the SDK for creating binary modules for the Project Monky server. Only install if you have a good understanding of C++!"
+msgstr "To je SDK za ustvarjanje binarnih modulov za Project Monky strežnik. Namestite samo, če dobro razumete jezik C++!"
 
 #. DESC_SectionGroupDev
 #: Shared/installer/nightly.nsi:234
-msgid "Development code and tools that aid in the creation of mods for Multi Theft Auto"
-msgstr "Razvojna koda in orodja ki pomagajo pri ustvarjanju modifikacij za Multi Theft Auto"
+msgid "Development code and tools that aid in the creation of mods for Project Monky"
+msgstr "Razvojna koda in orodja ki pomagajo pri ustvarjanju modifikacij za Project Monky"
 
 #. DESC_SectionGroupClient
 #: Shared/installer/nightly.nsi:235
-msgid "The client is the program you run to play on a Multi Theft Auto server"
-msgstr "Klient je program, ki ga zaženete za igranje na Multi Theft Auto strežnikih"
+msgid "The client is the program you run to play on a Project Monky server"
+msgstr "Klient je program, ki ga zaženete za igranje na Project Monky strežnikih"
 
 #. INST_CLIENTSERVER
 #: Shared/installer/nightly.nsi:444
@@ -168,8 +168,8 @@ msgstr "Namizna ikona"
 
 #. INST_PROTOCOL
 #: Shared/installer/nightly.nsi:461
-msgid "Register mtasa:// protocol"
-msgstr "Registriraj mtasa:// protokol"
+msgid "Register Project Monkysa:// protocol"
+msgstr "Registriraj Project Monkysa:// protokol"
 
 #. INST_GAMES_EXPLORER
 #: Shared/installer/nightly.nsi:462
@@ -258,7 +258,7 @@ msgstr "Ali ste prepričani, da želite popolnoma odstraniti $(^Name) in vse nje
 #. UNINST_REQUEST_NOTE
 #: Shared/installer/nightly.nsi:1049
 msgid "Uninstalling before update?$\\r$\n"
-"It is not necessary to uninstall before installing a new version of MTA:SA$\\r$\n"
+"It is not necessary to uninstall before installing a new version of Project Monky$\\r$\n"
 "Run the new installer to upgrade and preserve your settings."
 msgstr ""
 
@@ -287,20 +287,20 @@ msgstr "Prijavna storitev ne teče, prekinjam!"
 msgid "Unable to elevate"
 msgstr "Ni mogoče elevirati"
 
-#. INST_MTA_CONFLICT
+#. INST_Project Monky_CONFLICT
 #: Shared/installer/nightly.nsi:1844
-msgid "A different major version of MTA ($1) already exists at that path.$\n"
+msgid "A different major version of Project Monky ($1) already exists at that path.$\n"
 "$\n"
-"MTA is designed for major versions to be installed in different paths.$\n"
-" Are you sure you want to overwrite MTA $1 at $INSTDIR ?"
-msgstr "Drugačna glavna različica programa MTA ($1) že obstaja na tej poti.$\n"
+"Project Monky is designed for major versions to be installed in different paths.$\n"
+" Are you sure you want to overwrite Project Monky $1 at $INSTDIR ?"
+msgstr "Drugačna glavna različica programa Project Monky ($1) že obstaja na tej poti.$\n"
 "$\n"
-"Glavna različica MTA je narejena tako, da je nameščena na drugih poteh.$\n"
-"Ali ste prepričani da želite prepisati MTA $1 v $INSTDIR ?"
+"Glavna različica Project Monky je narejena tako, da je nameščena na drugih poteh.$\n"
+"Ali ste prepričani da želite prepisati Project Monky $1 v $INSTDIR ?"
 
 #. INST_GTA_CONFLICT
 #: Shared/installer/nightly.nsi:1848
-msgid "MTA cannot be installed into the same directory as GTA:SA.$\n"
+msgid "Project Monky cannot be installed into the same directory as GTA:SA.$\n"
 "$\n"
 "Do you want to use the default install directory$\n"
 "$DEFAULT_INSTDIR ?"
@@ -377,8 +377,8 @@ msgstr "Izberite mapo kjer želite namestiti ${PRODUCT_NAME_NO_VER} ${PRODUCT_VE
 
 #. INST_LOC_OW
 #: Shared/installer/nightly.nsi:2175
-msgid "Warning: A different major version of MTA ($1) already exists at that path."
-msgstr "Opozorilo: Na tej poti že obstaja glavna različica MTA ($1) ."
+msgid "Warning: A different major version of Project Monky ($1) already exists at that path."
+msgstr "Opozorilo: Na tej poti že obstaja glavna različica Project Monky ($1) ."
 
 #. INST_LOC_UPGRADE
 #: Shared/installer/nightly.nsi:2176

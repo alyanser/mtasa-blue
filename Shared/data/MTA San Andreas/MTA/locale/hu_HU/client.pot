@@ -20,11 +20,11 @@ msgstr ""
 #: Client/loader/MainFunctions.cpp:248
 msgid "Trouble restarting Project Monky\n\n"
 "If the problem persists, open Task Manager and\n"
-"stop the 'gta_sa.exe' and 'Multi Theft Auto.exe' processes\n\n\n"
+"stop the 'gta_sa.exe' and 'Project Monky.exe' processes\n\n\n"
 "Try to launch Project Monky again?"
 msgstr "Probléma lépett fel az Project Monky újraindításával\n\n"
 "Ha ez a probléma továbbra is fenn áll, nyisd meg a feladatkezelőt\n"
-"és zárd be a 'gta_sa.exe' és 'Multi Theft Auto.exe' folyamatokat.\n\n\n"
+"és zárd be a 'gta_sa.exe' és 'Project Monky.exe' folyamatokat.\n\n\n"
 "Megpróbálod újraindítani az Project Monky-t?"
 
 #. Show a message that the connection timed out and abort
@@ -162,12 +162,12 @@ msgid "Unable to terminate GTA: San Andreas. If the problem persists, please res
 msgstr "Nem lehet leállítani a GTA: San Andreas-t. Ha a probléma továbbra is fennáll, indítsa újra a számítógépet."
 
 #: Client/loader/MainFunctions.cpp:632
-msgid "Registry entries are missing. Please reinstall Multi Theft Auto: San Andreas."
-msgstr "Registry bejegyzések hiányoznak. Telepítse újra a Multi Theft Auto: San Andreas-t."
+msgid "Registry entries are missing. Please reinstall Project Monky: San Andreas."
+msgstr "Registry bejegyzések hiányoznak. Telepítse újra a Project Monky: San Andreas-t."
 
 #: Client/loader/MainFunctions.cpp:638
-msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Multi Theft Auto: San Andreas."
-msgstr "A GTA: San Andreas útja nem támogatott (Unicode) karaktereket tartalmaz. Kérjük helyezze a Grand Theft Auto: San Andreas telepítését egy kompatibilis útra, amely csak szabványos ASCII karaktereket tartalmaz és telepítse újra a Multi Theft Auto: San Andreas-t."
+msgid "The path to your installation of GTA: San Andreas contains unsupported (unicode) characters. Please move your Grand Theft Auto: San Andreas installation to a compatible path that contains only standard ASCII characters and reinstall Project Monky: San Andreas."
+msgstr "A GTA: San Andreas útja nem támogatott (Unicode) karaktereket tartalmaz. Kérjük helyezze a Grand Theft Auto: San Andreas telepítését egy kompatibilis útra, amely csak szabványos ASCII karaktereket tartalmaz és telepítse újra a Project Monky: San Andreas-t."
 
 #: Client/loader/MainFunctions.cpp:648
 msgid "The path to your installation of 'Project Monky' or 'GTA: San Andreas'\n"
@@ -212,19 +212,19 @@ msgstr "Az alap fájl aláíratlan. Lehetséges vírus aktivitása.\n\n"
 #: Client/loader/MainFunctions.cpp:882
 #, c-format
 msgid "Data file %s is missing. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "A(z) %s adatfájl hiányzik. Lehetséges vírusaktivitás.\n\n"
-"Biztonságod érdekében fontold meg a Multi Theft Auto újratelepítését.\n"
+"Biztonságod érdekében fontold meg a Project Monky újratelepítését.\n"
 "Ha az MTA nem működik megfelelően, nézd meg az online súgót."
 
 #: Client/loader/MainFunctions.cpp:893
 #, c-format
 msgid "Data file %s is modified. Possible virus activity.\n\n"
-"Consider reinstalling Multi Theft Auto for your security.\n"
+"Consider reinstalling Project Monky for your security.\n"
 "See online help if MTA does not work correctly."
 msgstr "A(z) %s adatfájl módosult. Lehetséges vírusaktivitás.\n\n"
-"Biztonságod érdekében fontold meg a Multi Theft Auto újratelepítését.\n"
+"Biztonságod érdekében fontold meg a Project Monky újratelepítését.\n"
 "Ha az MTA nem működik megfelelően, nézd meg az online súgót."
 
 #: Client/loader/MainFunctions.cpp:907
@@ -516,8 +516,8 @@ msgstr "Nem lehet frissíteni egy fájl ütközése miatt. Kérlek zárj be mind
 
 #: Client/loader/CInstallManager.cpp:561
 #, c-format
-msgid "Multi Theft Auto has not been installed properly, please reinstall. %s"
-msgstr "Multi Theft Auto nem lett megfelelően telepítve, kérlek telepítsd újra. %s"
+msgid "Project Monky has not been installed properly, please reinstall. %s"
+msgstr "Project Monky nem lett megfelelően telepítve, kérlek telepítsd újra. %s"
 
 #: Client/loader/CInstallManager.cpp:613
 msgid "Create GTA:SA junctions"
@@ -605,11 +605,11 @@ msgstr "A '%s' fájl jelenleg %zu folyamat(ok) által zárolva van.\n\n"
 #, c-format
 msgid "Your installation may be corrupt now.\n\n"
 "%zu out of %zu files could not be restored from the backup.\n\n"
-"You should reinstall Multi Theft Auto from www.multitheftauto.com\n"
+"You should reinstall Project Monky from www.multitheftauto.com\n"
 "or try running the update with administrator rights."
 msgstr "Lehet, hogy a telepítés most sérült.\n\n"
 "%zu fájlból %zu nem állítható vissza a biztonsági másolatból.\n\n"
-"Telepítsd újra a Multi Theft Auto-t a www.multitheftauto.com webhelyről\n"
+"Telepítsd újra a Project Monky-t a www.multitheftauto.com webhelyről\n"
 "vagy próbáld meg futtatni a frissítést rendszergazdai jogokkal."
 
 #: Client/loader/Utils.cpp:535
@@ -3369,8 +3369,8 @@ msgid "Connection error"
 msgstr "Csatlakozási hiba"
 
 #: Shared/sdk/SharedUtil.Misc.hpp:137
-msgid "Multi Theft Auto has not been installed properly, please reinstall."
-msgstr "Multi Theft Auto nincs megfelelően feltelepítve, kérlek telepítsd újra."
+msgid "Project Monky has not been installed properly, please reinstall."
+msgstr "Project Monky nincs megfelelően feltelepítve, kérlek telepítsd újra."
 
 #: Shared/sdk/SharedUtil.Misc.hpp:702
 msgid "Your browser will now display a web page with some help infomation.\n\n"

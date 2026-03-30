@@ -14,22 +14,22 @@ msgstr ""
 "X-Crowdin-Project: 2d3d942aa8adf891478198912ac0b233\n"
 "X-Crowdin-Project-ID: 13\n"
 "X-Crowdin-Language: bg\n"
-"X-Crowdin-File: /[multitheftauto.mtasa-blue] master/Shared/installer/locale/en_US.pot\n"
+"X-Crowdin-File: /[multitheftauto.Project Monkysa-blue] master/Shared/installer/locale/en_US.pot\n"
 "X-Crowdin-File-ID: 89\n"
 
 #. GET_XPVISTA_PLEASE
 #: Shared/installer/nightly.nsi:205
-msgid "The version of MTA:SA you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded does not support Windows XP or Vista.  Please download an alternative version from www.multitheftauto.com."
 msgstr ""
 
 #. GET_WIN81_PLEASE
 #: Shared/installer/nightly.nsi:206
-msgid "The version of MTA:SA you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded does not support Windows 7, 8 or 8.1.  Please download an alternative version from www.multitheftauto.com."
 msgstr ""
 
 #. GET_MASTER_PLEASE
 #: Shared/installer/nightly.nsi:207
-msgid "The version of MTA:SA you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
+msgid "The version of Project Monky you've downloaded is designed for old versions of Windows.  Please download an alternative version from www.multitheftauto.com."
 msgstr ""
 
 #. WELCOME_TEXT
@@ -57,12 +57,12 @@ msgstr "Папката на Grand Theft Auto: San Andreas"
 #: Shared/installer/nightly.nsi:214
 msgid "Please select your Grand Theft Auto: San Andreas folder.$\n"
 "$\n"
-"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use MTA:SA, it does not support any other versions.$\n"
+"You MUST have Grand Theft Auto: San Andreas 1.0 installed to use Project Monky, it does not support any other versions.$\n"
 "$\n"
 "Click Install to begin installing."
 msgstr "Моля изберете папката на Grand Theft Auto: San Andreas.$\n"
 "$\n"
-"Вие ТРЯБВА да имате have Grand Theft Auto: San Andreas 1.0 инсталирана за да играете MTA:SA, защото тя не поддържа други версии.$\n"
+"Вие ТРЯБВА да имате have Grand Theft Auto: San Andreas 1.0 инсталирана за да играете Project Monky, защото тя не поддържа други версии.$\n"
 "$\n"
 "Цъкнете Инсталирай за да продължите."
 
@@ -73,13 +73,13 @@ msgstr "Създай Стар Меню група за инсталирани п
 
 #. DESC_Section11
 #: Shared/installer/nightly.nsi:218
-msgid "Create a Desktop Shortcut for the MTA:SA Client."
-msgstr "Създай пряк път на работния плот за MTA:SA Клиента."
+msgid "Create a Desktop Shortcut for the Project Monky Client."
+msgstr "Създай пряк път на работния плот за Project Monky Клиента."
 
 #. DESC_Section12
 #: Shared/installer/nightly.nsi:219
-msgid "Register mtasa:// protocol for browser clickable-ness."
-msgstr "Регистрирайте mtasa:// протокол за по-лесно свързване към сайтове."
+msgid "Register Project Monkysa:// protocol for browser clickable-ness."
+msgstr "Регистрирайте Project Monkysa:// протокол за по-лесно свързване към сайтове."
 
 #. DESC_Section13
 #: Shared/installer/nightly.nsi:220
@@ -93,28 +93,28 @@ msgstr "Инсталирай или обнови DirectX (ако има нужд
 
 #. DESC_Section1
 #: Shared/installer/nightly.nsi:222
-msgid "The core components required to run Multi Theft Auto."
-msgstr "Основните компоненти, необходими за стартиране Multi Theft Auto."
+msgid "The core components required to run Project Monky."
+msgstr "Основните компоненти, необходими за стартиране Project Monky."
 
 #. DESC_Section2
 #: Shared/installer/nightly.nsi:223
-msgid "The MTA:SA modification, allowing you to play online."
-msgstr "MTA: SA е модификация, която Ви позволява да играете онлайн."
+msgid "The Project Monky modification, allowing you to play online."
+msgstr "Project Monky: SA е модификация, която Ви позволява да играете онлайн."
 
 #. DESC_SectionGroupServer
 #: Shared/installer/nightly.nsi:226
-msgid "The Multi Theft Auto Server. This allows you to host games from your computer. This requires a fast internet connection."
-msgstr "Multi Theft Auto сървър. Това Ви позволява да поддържате сървър от вашия компютър. Изисква се бърз интернет."
+msgid "The Project Monky Server. This allows you to host games from your computer. This requires a fast internet connection."
+msgstr "Project Monky сървър. Това Ви позволява да поддържате сървър от вашия компютър. Изисква се бърз интернет."
 
 #. DESC_Section4
 #: Shared/installer/nightly.nsi:227
-msgid "The Multi Theft Auto server. This is a required component."
-msgstr "Multi Theft Auto сървър. Това е задължителен компонент"
+msgid "The Project Monky server. This is a required component."
+msgstr "Project Monky сървър. Това е задължителен компонент"
 
 #. DESC_Section5
 #: Shared/installer/nightly.nsi:228
-msgid "The MTA:SA modification for the server."
-msgstr "MTA: SA модификация на сървъра."
+msgid "The Project Monky modification for the server."
+msgstr "Project Monky: SA модификация на сървъра."
 
 #. DESC_Section6
 #: Shared/installer/nightly.nsi:229
@@ -128,23 +128,23 @@ msgstr "Това е допълнителен набор от видовете з
 
 #. DESC_Section8
 #: Shared/installer/nightly.nsi:231
-msgid "The MTA:SA 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for MTA."
-msgstr "MTA: SA 1.0 Map Editor. Това може да се използва за създадаване на собствени карти за различните режими на игра в МТА."
+msgid "The Project Monky 1.0 Map Editor.  This can be used to create your very own maps for use in gamemodes for Project Monky."
+msgstr "Project Monky: SA 1.0 Map Editor. Това може да се използва за създадаване на собствени карти за различните режими на игра в МТА."
 
 #. DESC_Section9
 #: Shared/installer/nightly.nsi:232
-msgid "This is the SDK for creating binary modules for the MTA server. Only install if you have a good understanding of C++!"
+msgid "This is the SDK for creating binary modules for the Project Monky server. Only install if you have a good understanding of C++!"
 msgstr "Това е SDK за създаване на двукомпонентни модули за сървър на МТА. Инсталирайте само ако имате добро разбиране на C++!"
 
 #. DESC_SectionGroupDev
 #: Shared/installer/nightly.nsi:234
-msgid "Development code and tools that aid in the creation of mods for Multi Theft Auto"
-msgstr "Разработен код и инструменти, които помагат при направата на модове за Multi Theft Auto."
+msgid "Development code and tools that aid in the creation of mods for Project Monky"
+msgstr "Разработен код и инструменти, които помагат при направата на модове за Project Monky."
 
 #. DESC_SectionGroupClient
 #: Shared/installer/nightly.nsi:235
-msgid "The client is the program you run to play on a Multi Theft Auto server"
-msgstr "Клиентът е пограмата, която използвате за да играете в Multi Theft Auto сървър"
+msgid "The client is the program you run to play on a Project Monky server"
+msgstr "Клиентът е пограмата, която използвате за да играете в Project Monky сървър"
 
 #. INST_CLIENTSERVER
 #: Shared/installer/nightly.nsi:444
@@ -168,8 +168,8 @@ msgstr "Икона на работния плот"
 
 #. INST_PROTOCOL
 #: Shared/installer/nightly.nsi:461
-msgid "Register mtasa:// protocol"
-msgstr "Регистрирай mtasa:// протокол"
+msgid "Register Project Monkysa:// protocol"
+msgstr "Регистрирай Project Monkysa:// протокол"
 
 #. INST_GAMES_EXPLORER
 #: Shared/installer/nightly.nsi:462
@@ -258,10 +258,10 @@ msgstr "Сигурни ли сте, че искате да премахнете 
 #. UNINST_REQUEST_NOTE
 #: Shared/installer/nightly.nsi:1049
 msgid "Uninstalling before update?$\\r$\n"
-"It is not necessary to uninstall before installing a new version of MTA:SA$\\r$\n"
+"It is not necessary to uninstall before installing a new version of Project Monky$\\r$\n"
 "Run the new installer to upgrade and preserve your settings."
 msgstr "Деинсталиране преди актуализация?$\\r$\n"
-"Не е необходимо да деинсталирате преди да инсталирате нова версия на MTA:SA$\\r$\n"
+"Не е необходимо да деинсталирате преди да инсталирате нова версия на Project Monky$\\r$\n"
 "Стартирайте новия инсталатор за да обновите и запазите настройките си."
 
 #. UNINST_DATA_REQUEST
@@ -289,24 +289,24 @@ msgstr "Вписващата услуга не работи, прекратяв�
 msgid "Unable to elevate"
 msgstr "Невъзможно издигане"
 
-#. INST_MTA_CONFLICT
+#. INST_Project Monky_CONFLICT
 #: Shared/installer/nightly.nsi:1844
-msgid "A different major version of MTA ($1) already exists at that path.$\n"
+msgid "A different major version of Project Monky ($1) already exists at that path.$\n"
 "$\n"
-"MTA is designed for major versions to be installed in different paths.$\n"
-" Are you sure you want to overwrite MTA $1 at $INSTDIR ?"
-msgstr "Друга версия на MTA:SA ($1) вече съществува в тази папка.$\n"
+"Project Monky is designed for major versions to be installed in different paths.$\n"
+" Are you sure you want to overwrite Project Monky $1 at $INSTDIR ?"
+msgstr "Друга версия на Project Monky ($1) вече съществува в тази папка.$\n"
 "$\n"
 "МТА:SA е предназначена други версии да бъдат инсталирани в различни папки.$\n"
-"Наистина ли искате да презапишете MTA $1 в $INSTDIR ?"
+"Наистина ли искате да презапишете Project Monky $1 в $INSTDIR ?"
 
 #. INST_GTA_CONFLICT
 #: Shared/installer/nightly.nsi:1848
-msgid "MTA cannot be installed into the same directory as GTA:SA.$\n"
+msgid "Project Monky cannot be installed into the same directory as GTA:SA.$\n"
 "$\n"
 "Do you want to use the default install directory$\n"
 "$DEFAULT_INSTDIR ?"
-msgstr "MTA не може да бъде инсталирана в същата папка с GTA:SA.$\n"
+msgstr "Project Monky не може да бъде инсталирана в същата папка с GTA:SA.$\n"
 "$\n"
 "Искате ли да се използва инсталационната директория по подразбиране$\n"
 "$DEFAULT_INSTDIR ?"
@@ -382,8 +382,8 @@ msgstr "Изберете папка, за инсталиране на ${PRODUCT_
 
 #. INST_LOC_OW
 #: Shared/installer/nightly.nsi:2175
-msgid "Warning: A different major version of MTA ($1) already exists at that path."
-msgstr "Внимание: Друга версия на MTA ($1) вече съществува в тази папка."
+msgid "Warning: A different major version of Project Monky ($1) already exists at that path."
+msgstr "Внимание: Друга версия на Project Monky ($1) вече съществува в тази папка."
 
 #. INST_LOC_UPGRADE
 #: Shared/installer/nightly.nsi:2176

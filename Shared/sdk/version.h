@@ -75,7 +75,7 @@
 #define QUOTE_DEFINE(x) QUOTE_DEFINE2(x)
 
 #define PM_VERSION_MAJOR 1
-#define PM_VERSION_MINOR 1
+#define PM_VERSION_MINOR 0
 #define PM_VERSIONSTRING "1.1"
 
 // Implement compile types
